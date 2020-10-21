@@ -50,15 +50,75 @@ $photo-size: 20vw;
     font-weight: 500;
   }
 
+  
   .card {
+    
     .card-title {
       font-size: 2rem;
       font-weight: 500;
     }
-
+    
     .card-text {
       font-size: 1.2rem;
       font-weight: 200;
     }
+
   }
+}
+
+.project-name {
+  margin: 0;
+  font-size: 2rem;
+  color: white;
+  text-shadow:
+    1px 1px 0 black,
+    -1px 1px 0 black,
+    -1px -1px 0 black,
+    1px -1px 0 black
+}
+
+.train-track {
+  background:
+    linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.5)),
+    url(/traintrack2.jpeg);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: cover;
+}
+
+.cop-26 {
+  background:
+    linear-gradient(270deg, transparent, rgba(0, 0, 0, 0.5)),
+    url(/cop26-4.jpeg);
+  background-position-x: 14%;
+  background-position-y: 38%;
+  background-size: cover;
+}
+
+.icebreaker {
+  background:
+    linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.5)),
+    url(/icebreaker-2.jpeg);
+  background-size: cover;
+}
+
+.a-sailor-a-cook {
+  background:
+    linear-gradient(270deg, transparent, rgba(0, 0, 0, 0.5)),
+    url(/a-sailor-a-cook.jpeg);
+  background-position-x: 14%;
+  background-position-y: 38%;
+  background-size: cover;
+}
+
+.tic-tac-toe {
+  // background-image: url('/public/')
+}
+
+.left-col {
+  text-align: left;
+}
+
+.right-col {
+  text-align: right;
 }
