@@ -22,5 +22,21 @@ $photo-size: 20vw;
 .central-photo {
   height: $photo-size;
   width: $photo-size;
-  background: var(--red);
+  background-image: url(/joe5.jpeg);
+  background-size: 200%;
+  background-position-x: 37%;
+  background-position-y: 40%;
+}
+
+.name {
+  font-size: 3.5rem;
+}
+
+.name-phonetic {
+  font-size: 1.85rem;
+}
+
+.definition {
+  font-size: 1.6rem;
+  font-weight: 300;
 }
