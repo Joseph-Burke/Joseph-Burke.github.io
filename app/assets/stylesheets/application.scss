@@ -1,1 +1,19 @@
 @import "bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: quicksand;
+  src: url('/public/assets/fonts/quicksand/Quicksand-VariableFont_wght.ttf');
+}
+
+$photo-size: 14vw;
+$quicksand: quicksand, sans-serif;
+
+* {
+  font-family: $quicksand;
+}
+
+.central-photo {
+  height: $photo-size;
+  width: $photo-size;
+  background: var(--red);
+}

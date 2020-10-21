@@ -38,3 +38,5 @@ yarn-debug.log*
 # Extra files to ignore
 .rubocop.yml
 .stylelintrc.json
+
+.DS_Store
