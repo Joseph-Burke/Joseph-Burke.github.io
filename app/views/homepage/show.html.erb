@@ -3,7 +3,7 @@
 <%# ad infinitum. %>
 
 <section class="container-fluid min-vh-100">
-  <div class="h-100 col-6 mx-auto pt-7 d-flex flex-column align-items-center">
+  <div class="h-100 col-6 mx-auto pt-6 d-flex flex-column align-items-center">
 
     <div class="rounded-circle central-photo"></div>
 
@@ -11,44 +11,51 @@
     <h4 class="name-phonetic mt-n3 mr-3">\ˈʤəʊ ‘bɜːk\</h4>
     <h5 class="definition text-center mt-1"><span class="font-italic">n.</span> An entry-level developer with boundless potential</h5>
 
-    <%# This will be the dropdown section. %>
-    <div class="dictionary">
-      <%# Button group to select collapsed content %>
+    <div class="dictionary mt-2">
 
-      <div class="btn-group d-flex" role="group" aria-label="Basic example">
-        <button type="button" class="btn flex-grow-1" data-toggle="collapse" data-target=".show, #synonyms-card" aria-expanded="true" aria-controls="collapseExample">Synonyms</button>
-        <button type="button" class="btn flex-grow-1" data-toggle="collapse" data-target=".show, #antonyms-card" aria-expanded="false" aria-controls="collapseExample">Antonyms</button>
-        <button type="button" class="btn flex-grow-1" data-toggle="collapse" data-target=".show, #examples-card" aria-expanded="false" aria-controls="collapseExample">Examples</button>
-        <button type="button" class="btn flex-grow-1" data-toggle="collapse" data-target=".show, #famous-quotes-card" aria-expanded="false" aria-controls="collapseExample">Famous Quotes</button>
+      <div class="tab-bar btn-group d-flex" role="group" aria-label="Basic example">
+        <button type="button" class="tab btn flex-grow-1" data-toggle="collapse" data-target=".show, #synonyms-card" aria-expanded="true" aria-controls="collapseExample">Synonyms</button>
+        <button type="button" class="tab btn flex-grow-1" data-toggle="collapse" data-target=".show, #antonyms-card" aria-expanded="false" aria-controls="collapseExample">Antonyms</button>
+        <button type="button" class="tab btn flex-grow-1" data-toggle="collapse" data-target=".show, #examples-card" aria-expanded="false" aria-controls="collapseExample">Examples</button>
+        <button type="button" class="tab btn flex-grow-1" data-toggle="collapse" data-target=".show, #famous-quotes-card" aria-expanded="false" aria-controls="collapseExample">Famous Quotes</button>
       </div>
 
       <div class="collapse" id="synonyms-card">
-        <div class="card card-body">
-          This is the Synonyms card!
+        <div class="card card-body flex-row row no-gutters p-0 align-items-center">
+          <h6 class="col-4 card-title text-center">Hardworking</h6>
+          <p class="col-8 card-text">
+            Since beginning Microverse's Full-Stack Web Development course in June, Joe has completed over 30 projects, pushed 800 commits to repositories on GitHub
+            and maintained a gruelling 40 hours of coding a week. His work ethic is fuelled both by a delighted fascination with computer programming and an unyielding
+            desire to break into the industry and land his first job.
+          </p>
         </div>
       </div>
 
       <div class="collapse" id="antonyms-card">
-        <div class="card card-body">
-          This is the Antonyms card!
+        <div class="card card-body flex-row row no-gutters p-0 align-items-center">
+          <h6 class="col-4 card-title text-center">Hardworking</h6>
+          <p class="col-8 card-text">
+            Since beginning Microverse's Full-Stack Web Development course in June, Joe has completed over 30 projects, pushed 800 commits to repositories on GitHub
+            and maintained a gruelling 40 hours of coding a week. His work ethic is fuelled both by a delighted fascination with computer programming and an unyielding
+            desire to break into the industry and land his first job.
+          </p>
         </div>
       </div>
 
       <div class="collapse" id="examples-card">
-        <div class="card card-body">
-          This is the Examples card!
+        <div class="card card-body flex-row row no-gutters p-0 align-items-center">
+          
         </div>
       </div>
 
       <div class="collapse" id="famous-quotes-card">
-        <div class="card card-body">
-          This is the Famous Quotes card!
+        <div class="card card-body flex-row row no-gutters p-0 align-items-center">
+          
         </div>
       </div>
 
     </div>
   
-  <%# -- %>
   </div>
 </section>
 
