@@ -68,13 +68,14 @@ $photo-size: 20vw;
 
 .project-name {
   margin: 0;
-  font-size: 2rem;
-  color: white;
-  text-shadow:
-    1px 1px 0 black,
-    -1px 1px 0 black,
-    -1px -1px 0 black,
-    1px -1px 0 black
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 900;
+  // text-shadow:
+  //   2px 2px 0 white,
+  //   -2px 2px 0 white,
+  //   -2px -2px 0 white,
+  //   2px -2px 0 white
 }
 
 .train-track {
@@ -121,4 +122,10 @@ $photo-size: 20vw;
 
 .right-col {
   text-align: right;
+}
+
+.projects-section {
+  .section-title {
+    font-size: 2.7rem;
+  }
 }
