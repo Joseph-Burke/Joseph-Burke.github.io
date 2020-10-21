@@ -2,15 +2,53 @@
 <%# This may need changing to be container xl later so that it won't stretch %>
 <%# ad infinitum. %>
 
-<section class="container-fluid vh-100">
-  <div class="col-5 mx-auto pt-7 d-flex flex-column align-items-center">
+<section class="container-fluid min-vh-100">
+  <div class="h-100 col-6 mx-auto pt-7 d-flex flex-column align-items-center">
 
     <div class="rounded-circle central-photo"></div>
 
     <h1 class="font-weight-bold name mt-3 ml-1">Joe Burke</h1>
     <h4 class="name-phonetic mt-n3 mr-3">\ˈʤəʊ ‘bɜːk\</h4>
     <h5 class="definition text-center mt-1"><span class="font-italic">n.</span> An entry-level developer with boundless potential</h5>
+
+    <%# This will be the dropdown section. %>
+    <div class="dictionary">
+      <%# Button group to select collapsed content %>
+
+      <div class="btn-group d-flex" role="group" aria-label="Basic example">
+        <button type="button" class="btn flex-grow-1" data-toggle="collapse" data-target=".show, #synonyms-card" aria-expanded="true" aria-controls="collapseExample">Synonyms</button>
+        <button type="button" class="btn flex-grow-1" data-toggle="collapse" data-target=".show, #antonyms-card" aria-expanded="false" aria-controls="collapseExample">Antonyms</button>
+        <button type="button" class="btn flex-grow-1" data-toggle="collapse" data-target=".show, #examples-card" aria-expanded="false" aria-controls="collapseExample">Examples</button>
+        <button type="button" class="btn flex-grow-1" data-toggle="collapse" data-target=".show, #famous-quotes-card" aria-expanded="false" aria-controls="collapseExample">Famous Quotes</button>
+      </div>
+
+      <div class="collapse" id="synonyms-card">
+        <div class="card card-body">
+          This is the Synonyms card!
+        </div>
+      </div>
+
+      <div class="collapse" id="antonyms-card">
+        <div class="card card-body">
+          This is the Antonyms card!
+        </div>
+      </div>
+
+      <div class="collapse" id="examples-card">
+        <div class="card card-body">
+          This is the Examples card!
+        </div>
+      </div>
+
+      <div class="collapse" id="famous-quotes-card">
+        <div class="card card-body">
+          This is the Famous Quotes card!
+        </div>
+      </div>
+
+    </div>
   
+  <%# -- %>
   </div>
 </section>
 

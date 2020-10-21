@@ -20,8 +20,8 @@ $spacers: (
 $photo-size: 20vw;
 
 .central-photo {
-  height: $photo-size;
-  width: $photo-size;
+  min-height: $photo-size;
+  min-width: $photo-size;
   background-image: url(/joe5.jpeg);
   background-size: 200%;
   background-position-x: 37%;
@@ -39,4 +39,9 @@ $photo-size: 20vw;
 .definition {
   font-size: 1.6rem;
   font-weight: 300;
+}
+
+.dictionary {
+  width: 90%;
+  border: 0.5px solid rgb(200, 200, 200);
 }
