@@ -1,3 +1,5 @@
+@import "font-awesome";
+
 @font-face {
   font-family: quicksand;
   src: url('/public/assets/fonts/quicksand/Quicksand-VariableFont_wght.ttf');
@@ -26,6 +28,35 @@ $photo-size: 20vw;
   background-size: 200%;
   background-position-x: 36%;
   background-position-y: 40%;
+}
+
+.social-media-links {
+  min-width: 30vw;
+
+  .link-container {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  a {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    border-radius: 100%;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    transition: background-color 1s ease;
+  }
+
+  a:hover {
+    cursor: pointer;
+    background-color: rgba(170, 170, 170, 0.7);
+    transition: background-color 0.25s ease;
+  }
 }
 
 .name {
