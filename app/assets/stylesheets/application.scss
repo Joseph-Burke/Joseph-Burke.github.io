@@ -68,7 +68,7 @@ $photo-size: 20vw;
 
 .project-name {
   margin: 0;
-  font-size: 3rem;
+  font-size: 4.5vw;
   color: rgba(255, 255, 255, 0.7);
   font-weight: 900;
   // text-shadow:
@@ -113,7 +113,19 @@ $photo-size: 20vw;
 }
 
 .tic-tac-toe {
-  // background-image: url('/public/')
+  background:
+    linear-gradient(270deg, transparent, rgba(0, 0, 0, 0.5)),
+    url(/tic-tac-toe-1.jpeg);
+  background-size: cover;
+  background-position-x: right;
+}
+
+.snake {
+  background:
+    linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.5)),
+    url(/snake.jpeg);
+  background-size: cover;
+  background-position-x: left;
 }
 
 .left-col {
@@ -126,6 +138,6 @@ $photo-size: 20vw;
 
 .projects-section {
   .section-title {
-    font-size: 2.7rem;
+    font-size: 3rem;
   }
 }
