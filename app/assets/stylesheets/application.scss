@@ -24,7 +24,7 @@ $photo-size: 20vw;
   min-width: $photo-size;
   background-image: url(/joe5.jpeg);
   background-size: 200%;
-  background-position-x: 37%;
+  background-position-x: 36%;
   background-position-y: 40%;
 }
 
@@ -50,35 +50,83 @@ $photo-size: 20vw;
     font-weight: 500;
   }
 
-  
   .card {
-    
     .card-title {
       font-size: 2rem;
       font-weight: 500;
     }
-    
+
     .card-text {
       font-size: 1.2rem;
       font-weight: 200;
     }
-
   }
 }
 
-.project-name {
-  margin: 0;
-  font-size: 4.5vw;
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: 900;
-  // text-shadow:
-  //   2px 2px 0 white,
-  //   -2px 2px 0 white,
-  //   -2px -2px 0 white,
-  //   2px -2px 0 white
+// PROJECTS SECTION
+
+.projects-section {
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .left-column {
+    > .cover {
+      right: 0;
+      transition: right 3s ease;
+    }
+  }
+
+  .left-column:hover {
+    > .cover {
+      right: 80%;
+      transition: right 2s ease;
+    }
+  }
+
+  .right-column {
+    > .cover {
+      left: 0;
+      transition: left 3s ease;
+    }
+  }
+
+  .right-column:hover {
+    > .cover {
+      left: 80%;
+      transition: left 2s ease;
+    }
+  }
+
+  .card:hover .project-name {
+    color: rgba(0, 0, 0, 0.7);
+    transition: color 2s ease;
+  }
+
+  .card {
+    overflow: hidden;
+
+    .cover {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+    }
+
+    .project-name {
+      position: absolute;
+      width: 100%;
+      z-index: 3;
+      margin: 0;
+      font-size: 4.5vw;
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.7);
+      transition: color 3s ease;
+    }
+  }
 }
 
-.train-track {
+.train-track .cover{
   background:
     linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.5)),
     url(/traintrack2.jpeg);
@@ -87,7 +135,7 @@ $photo-size: 20vw;
   background-size: cover;
 }
 
-.cop-26 {
+.cop-26 .cover {
   background:
     linear-gradient(270deg, transparent, rgba(0, 0, 0, 0.5)),
     url(/cop26-4.jpeg);
@@ -96,14 +144,14 @@ $photo-size: 20vw;
   background-size: cover;
 }
 
-.icebreaker {
+.icebreaker .cover {
   background:
     linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.5)),
     url(/icebreaker-2.jpeg);
   background-size: cover;
 }
 
-.a-sailor-a-cook {
+.a-sailor-a-cook .cover {
   background:
     linear-gradient(270deg, transparent, rgba(0, 0, 0, 0.5)),
     url(/a-sailor-a-cook.jpeg);
@@ -112,7 +160,7 @@ $photo-size: 20vw;
   background-size: cover;
 }
 
-.tic-tac-toe {
+.tic-tac-toe .cover {
   background:
     linear-gradient(270deg, transparent, rgba(0, 0, 0, 0.5)),
     url(/tic-tac-toe-1.jpeg);
@@ -120,7 +168,7 @@ $photo-size: 20vw;
   background-position-x: right;
 }
 
-.snake {
+.snake .cover {
   background:
     linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.5)),
     url(/snake.jpeg);
@@ -134,10 +182,4 @@ $photo-size: 20vw;
 
 .right-col {
   text-align: right;
-}
-
-.projects-section {
-  .section-title {
-    font-size: 3rem;
-  }
 }
