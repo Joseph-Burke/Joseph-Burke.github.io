@@ -101,6 +101,13 @@ $photo-size: 20vw;
     font-size: 3rem;
   }
 
+  .projects-grid {
+    display: grid;
+    grid-template-rows: 33.33%;
+    grid-template-columns: 50% 50%;
+    flex: 1;
+  }
+
   .left-column {
     > .cover {
       right: 0;
@@ -177,7 +184,7 @@ $photo-size: 20vw;
   }
 }
 
-.train-track .cover {
+.train-track  .cover {
   background:
     linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.5)),
     url(/traintrack2.jpeg);
