@@ -264,9 +264,15 @@ $photo-size: 20vw;
         border: 1px solid grey;
         width: calc(100%);
         height: calc(100%);
+        padding: 12px 12px;
 
-        h3 {
+        .box-title {
           text-align: center;
+          font-size: 2rem;
+        }
+        
+        .box-text {
+          font-size: 1.1rem;          
         }
       }
     }
