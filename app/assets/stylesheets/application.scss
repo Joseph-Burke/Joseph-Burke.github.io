@@ -109,6 +109,7 @@ $photo-size: 20vw;
   }
 
   .left-column {
+    justify-content: flex-end;
     > .cover {
       right: 0;
       transition: right 3s ease;
@@ -123,6 +124,7 @@ $photo-size: 20vw;
   }
 
   .right-column {
+    justify-content: flex-start;
     > .cover {
       left: 0;
       transition: left 3s ease;
@@ -145,7 +147,6 @@ $photo-size: 20vw;
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
 
     .cover {
       position: absolute;
@@ -179,6 +180,7 @@ $photo-size: 20vw;
 
       .tech-logo {
         flex: 1;
+        max-width: 100%;
       }
     }
   }
