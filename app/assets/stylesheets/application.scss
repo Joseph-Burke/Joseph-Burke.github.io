@@ -82,9 +82,11 @@ $photo-size: 20vw;
   }
 
   .card {
+    padding: 10px 10px 10px 0;
+
     .card-title {
       font-size: 2rem;
-      font-weight: 500;
+      font-weight: 700;
     }
 
     .card-text {
@@ -270,9 +272,9 @@ $photo-size: 20vw;
           text-align: center;
           font-size: 2rem;
         }
-        
+
         .box-text {
-          font-size: 1.1rem;          
+          font-size: 1.1rem;
         }
       }
     }
@@ -280,12 +282,15 @@ $photo-size: 20vw;
     .say-hello {
       grid-area: left;
     }
+
     .who-i-am {
       grid-area: center;
     }
+
     .my-stack {
       grid-area: right-top;
     }
+
     .cv {
       grid-area: right-bottom;
     }
