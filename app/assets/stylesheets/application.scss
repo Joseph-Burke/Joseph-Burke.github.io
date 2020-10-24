@@ -243,3 +243,45 @@ $photo-size: 20vw;
 .right-col {
   text-align: right;
 }
+
+.further-reading-section {
+  display: flex;
+  flex-direction: column;
+
+  .further-reading-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: 60% 40%;
+    grid-template-areas:
+      "left center right-top"
+      "left center right-bottom";
+
+    .cell {
+      padding: 30px;
+
+      .box {
+        border: 1px solid grey;
+        width: calc(100%);
+        height: calc(100%);
+
+        h3 {
+          text-align: center;
+        }
+      }
+    }
+
+    .say-hello {
+      grid-area: left;
+    }
+    .who-i-am {
+      grid-area: center;
+    }
+    .my-stack {
+      grid-area: right-top;
+    }
+    .cv {
+      grid-area: right-bottom;
+    }
+  }
+}
