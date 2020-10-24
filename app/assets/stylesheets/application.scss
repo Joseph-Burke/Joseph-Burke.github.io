@@ -70,8 +70,27 @@ html {
 
   a:hover {
     cursor: pointer;
-    background-color: rgba(170, 170, 170, 0.7);
     transition: background-color 0.25s ease;
+  }
+
+  a.twitter:hover {
+    color: rgb(29, 161, 242);
+    background-color: rgba(29, 161, 242, 0.1);
+  }
+
+  a.github:hover {
+    color: #6e5494;
+    background-color: rgba(110, 84, 148, 0.1);
+  }
+
+  a.linkedin:hover {
+    color: #0077b5;
+    background-color: rgba(0, 119, 181, 0.1);
+  }
+
+  a.medium:hover {
+    color: #00ab6c;
+    background-color: rgba(0, 171, 108, 0.1);
   }
 }
 
