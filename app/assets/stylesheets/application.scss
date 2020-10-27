@@ -22,12 +22,12 @@ $container-max-widths: (
 
 @import "bootstrap/scss/bootstrap";
 
-$photo-size: 20vw;
+$base-photo-size: 150px;
+$base-social-link-size: 3rem;
 
 html {
   font-size: 16px;
 }
-
 
 .landing-page-section,
 .projects-section {
@@ -44,8 +44,11 @@ html {
 }
 
 .central-photo {
-  min-height: $photo-size;
-  min-width: $photo-size;
+  min-width: $base-photo-size;
+  max-width: $base-photo-size;
+  flex-basis: 150px;
+  flex-grow: 0;
+  flex-shrink: 0;
   background-image: url(/joe5.jpeg);
   background-size: 200%;
   background-position-x: 36%;
@@ -53,7 +56,7 @@ html {
 }
 
 .social-media-links {
-  min-width: 30vw;
+  min-width: 250px;
 
   .link-container {
     flex: 1;
@@ -155,10 +158,6 @@ html {
 .tl-dr {
   text-align: center;
 
-  .first-line {
-    font-size: 1.35rem;
-  }
-
   .link-list {
     width: 500px;
     padding: 0;
@@ -250,7 +249,6 @@ html {
       flex-basis: 5%;
       flex-grow: 0;
       flex-shrink: 0;
-
       display: flex;
       flex-direction: column;
       align-items: stretch;
@@ -263,7 +261,7 @@ html {
   }
 }
 
-.train-track  .cover {
+.train-track .cover {
   background:
     linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.5)),
     url(/traintrack2.jpeg);
@@ -369,5 +367,161 @@ html {
     .cv {
       grid-area: right-bottom;
     }
+  }
+}
+
+// RESPONSIVE BEHAVIOUR
+
+@media (max-width: 575px) {
+  .landing-page-section {
+    padding-bottom: 1rem;
+
+    .intro-column {
+      .dictionary {
+        display: none;
+      }
+
+      .social-media-links a {
+        font-size: 1.7rem;
+        width: 1.7rem;
+        height: 1.7rem;
+      }
+
+      .name {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+      }
+
+      .name-phonetic {
+        font-size: 1.25rem;
+        margin-top: -0.75rem;
+      }
+
+      .definition {
+        font-size: 1rem;
+        margin: -0.2rem 0 0 0;
+        font-weight: 500;
+      }
+
+      .mobile-view-intro {
+        font-size: 0.85rem;
+        padding: 0.5rem 0;
+        margin: 0.5rem 0;
+        border-top: 1px solid rgba(100, 100, 100, 0.5);
+        border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+        text-align: center;
+      }
+
+      .tl-dr .desktop-view {
+        display: none;
+      }
+
+      .link-list {
+        padding: 0;
+        text-align: center;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        > * {
+          margin: 0 0.2rem;
+        }
+      }
+    }
+  }
+
+  .further-reading-section .further-reading-grid {
+    max-width: 100%;
+
+    .cell .box .box-text {
+      font-size: 0.5rem;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .landing-page-section {
+    padding-bottom: 1rem;
+
+    .intro-column {
+      padding: 3rem;
+
+      .mobile-view-intro {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-top: 1rem;
+      }
+    }
+
+    .tl-dr {
+      .mobile-view {
+        display: none;
+      }
+
+      .desktop-view {
+        display: inline;
+      }
+    }
+
+    .central-photo {
+      min-width: $base-photo-size;
+      max-width: $base-photo-size;
+      flex-basis: $base-photo-size;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+
+    .social-media-links a {
+      font-size: $base-social-link-size;
+      width: $base-social-link-size * 1.5;
+      height: $base-social-link-size * 1.5;
+    }
+
+    .definition {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    .name-phonetic {
+      font-size: 2rem;
+    }
+
+    .dictionary {
+      display: none;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .central-photo {
+    min-width: $base-photo-size;
+    max-width: $base-photo-size;
+    flex-basis: $base-photo-size;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .central-photo {
+    min-width: $base-photo-size;
+    max-width: $base-photo-size;
+    flex-basis: $base-photo-size;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .central-photo {
+    min-width: $base-photo-size;
+    max-width: $base-photo-size;
+    flex-basis: $base-photo-size;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 }

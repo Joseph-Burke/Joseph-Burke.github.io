@@ -3,11 +3,11 @@
 <%# ad infinitum. %>
 
 <section class="landing-page-section container-xl">
-  <div class="h-100 col-8 mx-auto pt-5 d-flex flex-column align-items-center">
+  <div class="intro-column h-100 col-12 col-lg-8 mx-auto d-flex flex-column align-items-center">
 
     <div class="rounded-circle central-photo"></div>
 
-    <div class="social-media-links d-flex mt-2">
+    <div class="social-media-links d-flex">
       <div class="link-container">
         <a class="twitter" href="https://twitter.com/__joeburke" target="_blank" ><%= fa_icon "twitter" %></a>
       </div>
@@ -22,11 +22,17 @@
       </div>
     </div>
 
-    <h1 class="font-weight-bold name ml-1 mt-n1">Joe Burke</h1>
-    <h4 class="name-phonetic mt-n3 mr-3">\ˈʤəʊ ‘bɜːk\</h4>
-    <h5 class="definition text-center mt-1"><span class="font-italic">n.</span> An entry-level developer with boundless potential</h5>
+    <h1 class="font-weight-bold name">Joe Burke</h1>
+    <h4 class="name-phonetic">\ˈʤəʊ ‘bɜːk\</h4>
+    <h5 class="definition text-center"><span class="font-italic">n.</span> An entry-level developer with boundless potential</h5>
+    <p class="mobile-view-intro">
+      Hey. My name is Joe and I write code and develop software and stuff.
 
-    <div class="dictionary mt-4">
+      Here on my portfolio website, you can check out my all my latest and greatest projects, read about my stack, skills and experiences
+      and get to know me a bit better.
+    </p>
+
+    <div class="dictionary">
       <div class="tab-bar btn-group d-flex" role="group" aria-label="Basic example">
         <button type="button" class="tab btn flex-grow-1" data-toggle="collapse" data-target=".show, #synonyms-card" aria-expanded="false" aria-controls="collapseExample">Synonyms</button>
         <button type="button" class="tab btn flex-grow-1" data-toggle="collapse" data-target=".show, #antonyms-card" aria-expanded="false" aria-controls="collapseExample">Antonyms</button>
@@ -82,8 +88,22 @@
 
     </div>
 
+
   <div class="tl-dr">
-    <p class="first-line"><strong>TL;DR?</strong> Cut to the chase:</p>
+    <span class="mobile-view">
+      <strong>
+      Pressed for time?
+      <br>    
+      Cut to the chase:
+      </strong>
+    </span>
+
+    <span class="desktop-view">
+      <strong>TL;DR?</strong>
+      Cut to the chase:
+    </span>
+  </div>
+
     <ul class="link-list">
       <a href="#further-reading-section">Who I Am</a>
       <span>•</span>
@@ -182,71 +202,74 @@
   </div>
 </section>
 
-<section class="further-reading-section container-xl" id="further-reading-section">
-  <div class="row flex-column align-items-center">
-    <h1 class="section-title m-0">Further Reading</h1>
-    <h4 class="mr-2">/ˈfɜːðə ˈriːdɪŋ/</h4>
-  </div>
+<% if false %>
 
-  <div class="further-reading-grid">
-    <div class="say-hello cell">
-      <div class="box">
-        <h3 class="box-title">Say Hello</h3>
-        <p class="box-text">
-          Whether you’re an employer looking to fill a role, a businessperson in need of a website or 
-          just another lost soul wandering aimlessly across this labyrinth we call the Internet, I would 
-          always be pleased and honoured to hear what you have to say. You can can get in touch with me 
-          using the form below, or if you prefer, via Twitter, LinkedIn or e-mail. Feedback on my work 
-          helps me improve and is always massively appreciated. Life is short, don’t be shy :) 
-        </p>
-      </div>
+  <section class="further-reading-section container-xl" id="further-reading-section">
+    <div class="row flex-column align-items-center">
+      <h1 class="section-title m-0">Further Reading</h1>
+      <h4 class="mr-2">/ˈfɜːðə ˈriːdɪŋ/</h4>
     </div>
 
-    <div class="who-i-am cell">
-      <div class="box">
-        <h3 class="box-title">Who I Am</h3>
-        <p class="box-text">
-          Beneath the glossy veneer of this impressively professional website is a human being known as 
-          Joe. I have visited and travelled in dozens of countries. I play the piano and the guitar and 
-          I sing and write songs and produce music. I’ve written scores of poems and short stories and 
-          I’ve contributed them to small publications. I lived in East Germany for 14 months, Vietnam 
-          for 3, Thailand for 3, France for 5. I’ve driven motorbikes but never a car. I speak French and 
-          Spanish conversationally and German comically. When I want to exercise, I run, when I want to 
-          think, I walk, when I want to relax, I sit and when I want to feel happy, I cook a big vegan 
-          meal for whoever’s nearby.
-        </p>
+    <div class="further-reading-grid">
+      <div class="say-hello cell">
+        <div class="box">
+          <h3 class="box-title">Say Hello</h3>
+          <p class="box-text">
+            Whether you’re an employer looking to fill a role, a businessperson in need of a website or 
+            just another lost soul wandering aimlessly across this labyrinth we call the Internet, I would 
+            always be pleased and honoured to hear what you have to say. You can can get in touch with me 
+            using the form below, or if you prefer, via Twitter, LinkedIn or e-mail. Feedback on my work 
+            helps me improve and is always massively appreciated. Life is short, don’t be shy :) 
+          </p>
+        </div>
       </div>
+
+      <div class="who-i-am cell">
+        <div class="box">
+          <h3 class="box-title">Who I Am</h3>
+          <p class="box-text">
+            Beneath the glossy veneer of this impressively professional website is a human being known as 
+            Joe. I have visited and travelled in dozens of countries. I play the piano and the guitar and 
+            I sing and write songs and produce music. I’ve written scores of poems and short stories and 
+            I’ve contributed them to small publications. I lived in East Germany for 14 months, Vietnam 
+            for 3, Thailand for 3, France for 5. I’ve driven motorbikes but never a car. I speak French and 
+            Spanish conversationally and German comically. When I want to exercise, I run, when I want to 
+            think, I walk, when I want to relax, I sit and when I want to feel happy, I cook a big vegan 
+            meal for whoever’s nearby.
+          </p>
+        </div>
+      </div>
+
+      <div class="my-stack cell">
+        <div class="box">
+          <h3 class="box-title">My Stack</h3>
+          <p class="box-text">
+            I’m currently enrolled on a Full-Stack Web Development course with Microverse. The main stack of 
+            the course is as follows: HTML & CSS, Ruby, Ruby on Rails, JavaScript, React & Redux. I’m currently 
+            enrolled on a Full-Stack Web Development course with Microverse. The main stack of the course is 
+            as follows: HTML & CSS, Ruby, Ruby on Rails, JavaScript, React & Redux. I’m currently enrolled on a 
+            Full-Stack Web Development course with Microverse. The main stack of the course is as follows: 
+            HTML & CSS, Ruby, Ruby on Rails, JavaScript, React & Redux. I’m currently enrolled on a Full-Stack 
+            Web Development course with Microverse.
+          </p>
+        </div>
+      </div>
+
+      <div class="cv cell">
+        <div class="box">
+          <h3 class="box-title">Curriculum Vitae</h3>
+          <p class="box-text">
+            My résumé is a one-page document which succintly outlines my professional experience and skills and
+            helps prospective employers determine my suitability for a role in their organisation. If you or someone 
+            you know are looking to fill a role, click below to access and download the document. Many thanks.
+          </p>
+        <%= link_to "My CV", "/résumé.pdf", target: "_blank" %>
+        </div>
+      </div>
+    
     </div>
 
-    <div class="my-stack cell">
-      <div class="box">
-        <h3 class="box-title">My Stack</h3>
-        <p class="box-text">
-          I’m currently enrolled on a Full-Stack Web Development course with Microverse. The main stack of 
-          the course is as follows: HTML & CSS, Ruby, Ruby on Rails, JavaScript, React & Redux. I’m currently 
-          enrolled on a Full-Stack Web Development course with Microverse. The main stack of the course is 
-          as follows: HTML & CSS, Ruby, Ruby on Rails, JavaScript, React & Redux. I’m currently enrolled on a 
-          Full-Stack Web Development course with Microverse. The main stack of the course is as follows: 
-          HTML & CSS, Ruby, Ruby on Rails, JavaScript, React & Redux. I’m currently enrolled on a Full-Stack 
-          Web Development course with Microverse.
-        </p>
-      </div>
-    </div>
 
-    <div class="cv cell">
-      <div class="box">
-        <h3 class="box-title">Curriculum Vitae</h3>
-        <p class="box-text">
-          My résumé is a one-page document which succintly outlines my professional experience and skills and
-          helps prospective employers determine my suitability for a role in their organisation. If you or someone 
-          you know are looking to fill a role, click below to access and download the document. Many thanks.
-        </p>
-       <%= link_to "My CV", "/résumé.pdf", target: "_blank" %>
-      </div>
-    </div>
-  
-  </div>
-
-
-  
-</section>
+    
+  </section>
+<% end %>
