@@ -109,25 +109,47 @@ html {
 
 .dictionary {
   width: 100%;
-  border: 0.5px solid rgb(200, 200, 200);
 
   .tab-bar .tab {
+    border: 0.5px solid rgb(200, 200, 200);
     font-size: 1.1rem;
     font-weight: 500;
   }
 
-  .card {
-    padding: 15px 15px 15px 0;
+  .collapsed-area {
+    height: 200px;
 
-    .card-title {
-      font-size: 2rem;
-      font-weight: 700;
-    }
+    .card {
+      border: 0.5px solid rgb(200, 200, 200);
+      padding: 15px 15px 15px 0;
 
-    .card-text {
-      font-size: 1.2rem;
-      font-weight: 200;
+      .card-title {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+
+      .card-text {
+        font-size: 1.2rem;
+        font-weight: 200;
+      }
     }
+  }
+}
+
+.tl-dr {
+  text-align: center;
+
+  .first-line {
+    font-size: 1.35rem;
+  }
+
+  .link-list {
+    width: 500px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 1.2rem;
   }
 }
 
@@ -147,6 +169,7 @@ html {
 
   .left-column {
     justify-content: flex-end;
+
     > .cover {
       right: 0;
       transition: right 3s ease;
@@ -162,6 +185,7 @@ html {
 
   .right-column {
     justify-content: flex-start;
+
     > .cover {
       left: 0;
       transition: left 3s ease;
