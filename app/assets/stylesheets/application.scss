@@ -38,7 +38,6 @@ html {
 .projects-section,
 .further-reading-section {
   min-height: 100vh;
-  max-height: 1000px;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -275,7 +274,6 @@ html {
       "left center right-bottom";
 
     .cell {
-      padding: 30px;
 
       .box {
         border: 1px solid grey;
@@ -458,11 +456,32 @@ html {
     }
   }
 
-  .further-reading-section .further-reading-grid {
-    max-width: 100%;
+  .further-reading-section {
+    .section-title {
+      font-size: 2rem;
+    }
 
-    .cell .box .box-text {
-      font-size: 0.5rem;
+    .phonetic-subtitle {
+      font-size: 1rem;
+    }
+
+    .further-reading-grid {
+      display: flex;
+      flex-direction: column;
+
+      .cell .box {
+        .box-title {
+          font-size: 1.4rem;
+        }
+
+        .box-text {
+          font-size: 0.5rem;
+        }
+      }
+
+      .cell:not(:last-of-type) .box {
+        margin-bottom: 2rem;
+      }
     }
   }
 }
