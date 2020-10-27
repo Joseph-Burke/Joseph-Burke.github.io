@@ -475,12 +475,40 @@ html {
         }
 
         .box-text {
-          font-size: 0.5rem;
+          font-size: 0.75rem;
+          text-align: center;
         }
       }
 
       .cell:not(:last-of-type) .box {
         margin-bottom: 2rem;
+      }
+
+      .my-stack {
+        .stack-list {
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          li {
+            flex: 1;
+            list-style-type: none;
+
+            img {
+              max-width: 100%;
+            }
+          }
+
+          li:not(:first-of-type) {
+            margin-left: 0.3rem;
+          }
+
+          li:not(:last-of-type) {
+            margin-right: 0.3rem;
+          }
+        }
       }
     }
   }
