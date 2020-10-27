@@ -207,13 +207,6 @@ html {
     }
   }
 
-  .right-column:hover {
-    > .cover {
-      left: 80%;
-      transition: left 2s ease;
-    }
-  }
-
   .card:hover .project-name {
     color: rgba(0, 0, 0, 0.7);
     transition: color 2s ease;
@@ -258,56 +251,6 @@ html {
       }
     }
   }
-}
-
-.train-track .cover {
-  background:
-    linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.5)),
-    url(/traintrack2.jpeg);
-  background-position-x: 0%;
-  background-position-y: 0%;
-  background-size: cover;
-}
-
-.cop-26 .cover {
-  background:
-    linear-gradient(270deg, transparent, rgba(0, 0, 0, 0.5)),
-    url(/cop26-4.jpeg);
-  background-position-x: 14%;
-  background-position-y: 38%;
-  background-size: cover;
-}
-
-.icebreaker .cover {
-  background:
-    linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.5)),
-    url(/icebreaker-2.jpeg);
-  background-size: cover;
-}
-
-.a-sailor-a-cook .cover {
-  background:
-    linear-gradient(270deg, transparent, rgba(0, 0, 0, 0.5)),
-    url(/a-sailor-a-cook.jpeg);
-  background-position-x: 14%;
-  background-position-y: 38%;
-  background-size: cover;
-}
-
-.tic-tac-toe .cover {
-  background:
-    linear-gradient(270deg, transparent, rgba(0, 0, 0, 0.5)),
-    url(/tic-tac-toe-1.jpeg);
-  background-size: cover;
-  background-position-x: right;
-}
-
-.snake .cover {
-  background:
-    linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.5)),
-    url(/snake.jpeg);
-  background-size: cover;
-  background-position-x: left;
 }
 
 .left-col {
@@ -466,6 +409,50 @@ html {
         .card:hover > .cover {
           bottom: 75%;
           transition: bottom 2s ease;
+        }
+
+        .train-track .cover {
+          background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/traintrack2.jpeg);
+            background-size: cover;
+        }
+
+        .cop-26 .cover {
+          background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/cop26-4.jpeg);
+            background-size: cover;
+        }
+
+        .icebreaker .cover {
+          background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/icebreaker-2.jpeg);
+          background-size: cover;
+        }
+
+        .a-sailor-a-cook .cover {
+          background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/a-sailor-a-cook.jpeg);
+            background-size: cover;
+        }
+
+        .tic-tac-toe .cover {
+          background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/tic-tac-toe-1.jpeg);
+          background-size: cover;
+          background-position-x: right;
+        }
+
+        .snake .cover {
+          background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/snake.jpeg);
+          background-size: cover;
+          background-position-x: left;
         }
       }
     }
