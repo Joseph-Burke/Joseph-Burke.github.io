@@ -186,15 +186,15 @@ html {
     justify-content: flex-end;
 
     > .cover {
-      right: 0;
-      transition: right 3s ease;
+      bottom: 0;
+      transition: bottom 3s ease;
     }
   }
 
   .left-column:hover {
     > .cover {
-      right: 80%;
-      transition: right 2s ease;
+      bottom: 80%;
+      transition: bottom 2s ease;
     }
   }
 
@@ -233,11 +233,10 @@ html {
 
     .project-name {
       position: absolute;
-      bottom: 0;
+      top: 0.1rem;
       width: 100%;
       z-index: 3;
       margin: 0;
-      font-size: 3rem;
       font-weight: 900;
       color: rgba(255, 255, 255, 0.7);
       transition: color 3s ease;
@@ -382,7 +381,7 @@ html {
       }
 
       .social-media-links a {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         width: 1.7rem;
         height: 1.7rem;
       }
@@ -426,6 +425,47 @@ html {
 
         > * {
           margin: 0 0.2rem;
+        }
+      }
+    }
+  }
+
+  .projects-section {
+    > .row {
+      margin: 0;
+    }
+
+    .header {
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .phonetic-subtitle {
+        font-size: 1rem;
+      }
+    }
+
+    .projects-grid {
+      grid-template-rows: repeat(6, 150px);
+      grid-template-columns: 1fr;
+      grid-row-gap: 10px;
+
+      .grid-cell {
+        .card {
+          .cover {
+            bottom: 0;
+            transition: bottom 3s ease;
+          }
+
+          .project-name {
+            font-size: 2rem;
+            left: 0.5rem;
+          }
+        }
+
+        .card:hover > .cover {
+          bottom: 75%;
+          transition: bottom 2s ease;
         }
       }
     }
