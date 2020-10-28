@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: quicksand;
-  src: url('/public/assets/fonts/quicksand/Quicksand-VariableFont_wght.ttf');
+  src: local('/public/assets/fonts/quicksand/Quicksand-VariableFont_wght.ttf');
 }
 
 $quicksand: quicksand, sans-serif;
