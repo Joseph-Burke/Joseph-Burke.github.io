@@ -265,6 +265,15 @@
 
             Feedback on my work helps me improve and is always massively appreciated. Life is short, don’t 
             be shy :)
+
+            <%= form_with do %>
+              <%= label_tag :email, "E-mail:" %>
+              <%= text_field_tag :email  %>
+              <%= label_tag :message, "Message:" %>
+              <%= text_field_tag :message %>
+              <%= submit_tag "Send" %>
+            <% end %>
+
           </p>
         </div>
       </div>
