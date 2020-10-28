@@ -255,7 +255,7 @@
         <div class="box">
           <h3 class="box-title">Say Hello</h3>
           <p class="box-text">
-            Whether you’re an employer looking to fill a role, a businessperson in need of a website or 
+            Whether you’re an employer looking to fill a role, an entrepreneur in need of a website or 
             just another lost soul wandering aimlessly across this labyrinth we call the Internet, I would 
             always be pleased and honoured to hear what you have to say. You can can get in touch with me 
             using the form below, or if you prefer, via 
@@ -274,10 +274,11 @@
           <h3 class="box-title">Curriculum Vitae</h3>
           <p class="box-text">
             My résumé is a one-page document which succintly outlines my professional experience and skills and
-            helps prospective employers determine my suitability for a role in their organisation. If you or someone 
-            you know are looking to fill a role, click below to access and download the document. Many thanks.
+            helps prospective employers determine my suitability for a role in their organisation. If either you or 
+            someone you know is looking to fill a role, click below to access and download the document. Many thanks.
           </p>
-        <%= link_to "My CV", "/résumé.pdf", target: "_blank" %>
+
+          <%= link_to(image_tag("resume.jpeg"), "/resume.pdf", class: "cv-link", target: "_blank") %>
         </div>
       </div>
     </div>

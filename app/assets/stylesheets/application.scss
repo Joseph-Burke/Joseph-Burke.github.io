@@ -37,7 +37,6 @@ html {
 .landing-page-section,
 .projects-section,
 .further-reading-section {
-  min-height: 100vh;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -507,6 +506,28 @@ html {
 
           li:not(:last-of-type) {
             margin-right: 0.3rem;
+          }
+        }
+      }
+
+      .cv .box {
+        text-align: center;
+
+        .cv-link {
+          display: inline;
+          margin: 0 auto;
+
+          img {
+            max-width: 50%;
+            // border: 0.5px solid rgba(100, 100, 100, 0.5);
+            box-shadow: 0.5px 0.5px 1px black;
+            outline: 3px solid transparent;
+            transition: outline 1s ease;
+          }
+
+          img:hover {
+            outline: 3px solid rgba(100, 100, 100, 0.5);
+            transition: outline 1s ease;
           }
         }
       }
