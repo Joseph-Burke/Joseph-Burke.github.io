@@ -34,145 +34,109 @@ html {
   border-bottom: 1px solid rgba(150, 150, 150, 0.3);
 }
 
-.landing-page-section,
-.projects-section,
-.further-reading-section {
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.central-photo {
-  min-width: $base-photo-size;
-  max-width: $base-photo-size;
-  flex-basis: 150px;
-  flex-grow: 0;
-  flex-shrink: 0;
-  background-image: url(/joe5.jpeg);
-  background-size: 200%;
-  background-position-x: 36%;
-  background-position-y: 42%;
-}
-
-.social-media-links {
-  min-width: 250px;
-
-  .link-container {
-    flex: 1;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+.landing-page-section {
+  .central-photo {
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-image: url(/joe5.jpeg);
+    background-size: 200%;
+    background-position-x: 36%;
+    background-position-y: 42%;
   }
 
-  a {
-    font-size: 2rem;
-    color: black;
-    text-align: center;
-    border-radius: 100%;
-    display: block;
-    width: 3rem;
-    height: 3rem;
-    background-color: transparent;
-    transition: background-color 1s ease;
+  .social-media-links {
+    .link-container {
+      flex: 1;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    a {
+      color: black;
+      text-align: center;
+      border-radius: 100%;
+      display: block;
+      background-color: transparent;
+      transition: background-color 1s ease;
+    }
+
+    a:hover {
+      cursor: pointer;
+      transition: background-color 0.25s ease;
+    }
+
+    a.twitter:hover {
+      color: rgb(29, 161, 242);
+      background-color: rgba(29, 161, 242, 0.1);
+    }
+
+    a.github:hover {
+      color: #6e5494;
+      background-color: rgba(110, 84, 148, 0.1);
+    }
+
+    a.linkedin:hover {
+      color: #0077b5;
+      background-color: rgba(0, 119, 181, 0.1);
+    }
+
+    a.medium:hover {
+      color: #00ab6c;
+      background-color: rgba(0, 171, 108, 0.1);
+    }
   }
 
-  a:hover {
-    cursor: pointer;
-    transition: background-color 0.25s ease;
+  .definition {
+    font-weight: 300;
   }
 
-  a.twitter:hover {
-    color: rgb(29, 161, 242);
-    background-color: rgba(29, 161, 242, 0.1);
-  }
+  .dictionary {
+    width: 100%;
 
-  a.github:hover {
-    color: #6e5494;
-    background-color: rgba(110, 84, 148, 0.1);
-  }
-
-  a.linkedin:hover {
-    color: #0077b5;
-    background-color: rgba(0, 119, 181, 0.1);
-  }
-
-  a.medium:hover {
-    color: #00ab6c;
-    background-color: rgba(0, 171, 108, 0.1);
-  }
-}
-
-.name {
-  font-size: 3.5rem;
-}
-
-.name-phonetic {
-  font-size: 1.85rem;
-}
-
-.definition {
-  font-size: 1.6rem;
-  font-weight: 300;
-}
-
-.dictionary {
-  width: 100%;
-
-  .tab-bar .tab {
-    border: 0.5px solid rgb(200, 200, 200);
-    font-size: 1.1rem;
-    font-weight: 500;
-  }
-
-  .tab-bar .tab:focus {
-    box-shadow: none;
-  }
-
-  .tab-bar .tab[aria-expanded=true] {
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-  }
-
-  .collapsed-area {
-    height: 200px;
-    margin-bottom: 15px;
-
-    .card {
+    .tab-bar .tab {
       border: 0.5px solid rgb(200, 200, 200);
-      padding: 30px 15px;
+      font-weight: 500;
+    }
 
-      .card-title {
-        font-size: 2rem;
-        font-weight: 700;
-        font-family: 'Sriracha', cursive;
-      }
+    .tab-bar .tab:focus {
+      box-shadow: none;
+    }
 
-      .card-text {
-        font-size: 1.2rem;
-        font-weight: 200;
+    .tab-bar .tab[aria-expanded=true] {
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    .collapsed-area {
+      .card {
+        border: 0.5px solid rgb(200, 200, 200);
+
+        .card-title {
+          font-weight: 700;
+          font-family: 'Sriracha', cursive;
+        }
+
+        .card-text {
+          font-weight: 200;
+        }
       }
     }
   }
-}
 
-.tl-dr {
-  text-align: center;
+  .tl-dr {
+    text-align: center;
 
-  .link-list {
-    width: 500px;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    font-size: 1.2rem;
+    .link-list {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+    }
   }
 }
 
 // PROJECTS SECTION
 
 .projects-section {
-  .section-title {
-    font-size: 3rem;
-  }
-
   .projects-grid {
     display: grid;
     grid-template-rows: 33.33%;
@@ -251,13 +215,6 @@ html {
   }
 }
 
-.left-col {
-  text-align: left;
-}
-
-.right-col {
-  text-align: right;
-}
 // FURTHER READING SECTION
 .further-reading-section {
   display: flex;
@@ -265,35 +222,18 @@ html {
 
   .further-reading-grid {
     flex: 1;
-    display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
-    grid-template-rows: 60% 40%;
-    grid-template-areas:
-      "left center right-top"
-      "left center right-bottom";
 
     .cell {
-
       .box {
         border: 1px solid grey;
-        width: calc(100%);
-        height: calc(100%);
-        padding: 12px 12px;
 
         .box-title {
           text-align: center;
-          font-size: 2rem;
-        }
-
-        .box-text {
-          font-size: 1.1rem;
         }
       }
     }
 
     .say-hello {
-      grid-area: left;
-
       .contact-form {
         display: flex;
         flex-direction: column;
@@ -302,7 +242,6 @@ html {
           display: flex;
           flex-direction: row;
           align-items: center;
-          padding: 5px 0;
 
           label {
             min-width: 100px;
@@ -310,7 +249,8 @@ html {
             align-self: start;
           }
 
-          input {
+          input,
+          textarea {
             flex: 1;
           }
 
@@ -326,18 +266,6 @@ html {
         }
       }
     }
-
-    .who-i-am {
-      grid-area: center;
-    }
-
-    .my-stack {
-      grid-area: right-top;
-    }
-
-    .cv {
-      grid-area: right-bottom;
-    }
   }
 }
 
@@ -345,17 +273,26 @@ html {
 
 @media (max-width: 575px) {
   .landing-page-section {
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 
     .intro-column {
+      .central-photo {
+        min-width: 150px;
+        flex-basis: 150px;
+      }
+
       .dictionary {
         display: none;
       }
 
-      .social-media-links a {
-        font-size: 1.5rem;
-        width: 1.7rem;
-        height: 1.7rem;
+      .social-media-links {
+        min-width: 250px;
+
+        a {
+          font-size: 1.5rem;
+          width: 1.7rem;
+          height: 1.7rem;
+        }
       }
 
       .name {
@@ -389,9 +326,8 @@ html {
 
       .link-list {
         padding: 0;
-        text-align: center;
         margin: 0;
-        display: flex;
+        text-align: center;
         flex-wrap: wrap;
         justify-content: center;
 
@@ -444,14 +380,14 @@ html {
           background:
             linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
             url(/traintrack2.jpeg);
-            background-size: cover;
+          background-size: cover;
         }
 
         .cop-26 .cover {
           background:
             linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
             url(/cop26-4.jpeg);
-            background-size: cover;
+          background-size: cover;
         }
 
         .icebreaker .cover {
@@ -465,7 +401,7 @@ html {
           background:
             linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
             url(/a-sailor-a-cook.jpeg);
-            background-size: cover;
+          background-size: cover;
         }
 
         .tic-tac-toe .cover {
@@ -513,6 +449,12 @@ html {
 
       .cell:not(:last-of-type) .box {
         margin-bottom: 2rem;
+      }
+
+      .say-hello {
+        .contact-form .wrapper {
+          padding: 5px 0;
+        }
       }
 
       .my-stack {
@@ -685,14 +627,14 @@ html {
           background:
             linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
             url(/traintrack2.jpeg);
-            background-size: cover;
+          background-size: cover;
         }
 
         .cop-26 .cover {
           background:
             linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
             url(/cop26-4.jpeg);
-            background-size: cover;
+          background-size: cover;
         }
 
         .icebreaker .cover {
@@ -706,7 +648,7 @@ html {
           background:
             linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
             url(/a-sailor-a-cook.jpeg);
-            background-size: cover;
+          background-size: cover;
         }
 
         .tic-tac-toe .cover {
@@ -743,11 +685,11 @@ html {
 
       .cell .box {
         .box-title {
-          font-size: 1.4rem;
+          font-size: 1.5rem;
         }
 
         .box-text {
-          font-size: 0.75rem;
+          font-size: 1rem;
           text-align: center;
         }
       }
@@ -757,28 +699,35 @@ html {
       }
 
       .my-stack {
-        .stack-list {
-          padding: 0;
-          margin: 0;
+        .box {
           display: flex;
-          justify-content: space-between;
-          align-items: center;
+          flex-direction: column;
 
-          li {
-            flex: 1;
-            list-style-type: none;
+          .stack-list {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 350px;
+            align-self: center;
 
-            img {
-              max-width: 100%;
+            li {
+              flex: 1;
+              list-style-type: none;
+
+              img {
+                max-width: 100%;
+              }
             }
-          }
 
-          li:not(:first-of-type) {
-            margin-left: 0.3rem;
-          }
+            li:not(:first-of-type) {
+              margin-left: 0.3rem;
+            }
 
-          li:not(:last-of-type) {
-            margin-right: 0.3rem;
+            li:not(:last-of-type) {
+              margin-right: 0.3rem;
+            }
           }
         }
       }
@@ -809,13 +758,256 @@ html {
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  .central-photo {
-    min-width: $base-photo-size;
-    max-width: $base-photo-size;
-    flex-basis: $base-photo-size;
-    flex-grow: 0;
-    flex-shrink: 0;
+@media (min-width: 768px) and (max-width: 991px) {
+  .landing-page-section {
+    padding: 1rem 0;
+
+    .intro-column {
+      .central-photo {
+        min-width: 200px;
+        flex-basis: 200px;
+      }
+
+      .social-media-links {
+        min-width: 400px;
+
+        a {
+          font-size: 1.75rem;
+          width: 1.7rem;
+          height: 1.7rem;
+        }
+      }
+
+      .name {
+        font-size: 2.4rem;
+        margin-top: 0.5rem;
+      }
+
+      .name-phonetic {
+        font-size: 1.4rem;
+        margin-top: -0.75rem;
+      }
+
+      .definition {
+        font-size: 1.1rem;
+        margin: -0.2rem 0 0 0;
+        font-weight: 500;
+      }
+
+      .dictionary {
+        margin-top: 1rem;
+
+        .tab-bar .tab {
+          font-size: 0.9rem;
+        }
+
+        .collapsed-area {
+          min-height: 210px;
+
+          .card {
+            padding: 1rem 1rem 1rem 0;
+
+            .card-text {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+
+      .mobile-view-intro,
+      .tl-dr .mobile-view {
+        display: none;
+      }
+
+      .link-list {
+        padding: 0;
+        text-align: center;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        > * {
+          margin: 0 0.2rem;
+        }
+      }
+    }
+  }
+
+  .projects-section {
+    > .row {
+      margin: 0;
+    }
+
+    .header {
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .phonetic-subtitle {
+        font-size: 1rem;
+      }
+    }
+
+    .projects-grid {
+      grid-template-rows: repeat(6, 150px);
+      grid-template-columns: 1fr;
+      grid-row-gap: 10px;
+
+      .grid-cell {
+        .card {
+          .cover {
+            bottom: 0;
+            transition: bottom 3s ease;
+          }
+
+          .project-name {
+            font-size: 2rem;
+            left: 0.5rem;
+          }
+        }
+
+        .card:hover > .cover {
+          bottom: 75%;
+          transition: bottom 2s ease;
+        }
+
+        .train-track .cover {
+          background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/traintrack2.jpeg);
+          background-size: cover;
+        }
+
+        .cop-26 .cover {
+          background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/cop26-4.jpeg);
+          background-size: cover;
+        }
+
+        .icebreaker .cover {
+          background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/icebreaker-2.jpeg);
+          background-size: cover;
+        }
+
+        .a-sailor-a-cook .cover {
+          background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/a-sailor-a-cook.jpeg);
+          background-size: cover;
+        }
+
+        .tic-tac-toe .cover {
+          background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/tic-tac-toe-1.jpeg);
+          background-size: cover;
+          background-position-x: right;
+        }
+
+        .snake .cover {
+          background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/snake.jpeg);
+          background-size: cover;
+          background-position-x: left;
+        }
+      }
+    }
+  }
+
+  .further-reading-section {
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .phonetic-subtitle {
+      font-size: 1rem;
+    }
+
+    .further-reading-grid {
+      display: flex;
+      flex-direction: column;
+
+      .cell .box {
+        .box-title {
+          font-size: 1.5rem;
+        }
+
+        .box-text {
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+
+      .cell:not(:last-of-type) .box {
+        margin-bottom: 2rem;
+      }
+
+      .my-stack {
+        .box {
+          display: flex;
+          flex-direction: column;
+
+          .stack-list {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 350px;
+            align-self: center;
+
+            li {
+              flex: 1;
+              list-style-type: none;
+
+              img {
+                max-width: 100%;
+              }
+            }
+
+            li:not(:first-of-type) {
+              margin-left: 0.3rem;
+            }
+
+            li:not(:last-of-type) {
+              margin-right: 0.3rem;
+            }
+          }
+        }
+      }
+
+      .cv .box {
+        text-align: center;
+
+        .cv-link {
+          display: inline;
+          margin: 0 auto;
+
+          img {
+            max-width: 50%;
+            // border: 0.5px solid rgba(100, 100, 100, 0.5);
+            box-shadow: 0.5px 0.5px 1px black;
+            outline: 3px solid transparent;
+            transition: outline 1s ease;
+          }
+
+          img:hover {
+            outline: 3px solid rgba(100, 100, 100, 0.5);
+            transition: outline 1s ease;
+          }
+        }
+      }
+
+      .say-hello .box .contact-form {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+    }
   }
 }
 

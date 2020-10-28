@@ -114,7 +114,7 @@
 
 </section>
 
-<% if false %>
+<%# if false %>
 <section class="projects-section container-xl d-flex flex-column" id="projects-section">
   <div class="header row flex-column align-items-center">
     <h1 class="section-title">Projects</h1>
@@ -128,12 +128,6 @@
         <div class="cover"></div>
         <h4 class="project-name">COP26</h4>
 
-        <div class="tech-list">
-          <img src="/tech-logos/html-5.svg" class="tech-logo">
-          <img src="/tech-logos/sass.svg" class="tech-logo">
-          <img src="/tech-logos/bootstrap-4.svg" class="tech-logo">
-        </div>
-
       </div>
     </div>
 
@@ -141,12 +135,6 @@
       <div class="card right-column train-track flex-grow-1">
         <div class="cover"></div>
         <h4 class="project-name">TrainTrack</h4>
-
-        <div class="tech-list">
-          <img src="/tech-logos/ruby.svg" class="tech-logo">
-          <img src="/tech-logos/rails-1.svg" class="tech-logo">
-          <img src="/tech-logos/sass.svg" class="tech-logo">
-        </div>
 
       </div>
     </div>
@@ -156,9 +144,6 @@
         <div class="cover"></div>
         <h4 class="project-name">A Sailor, A Cook</h4>
 
-        <div class="tech-list">
-        </div>
-
       </div>
     </div>
 
@@ -166,9 +151,6 @@
       <div class="card right-column icebreaker flex-grow-1">
         <div class="cover"></div>
         <h4 class="project-name">Icebreaker</h4>
-
-        <div class="tech-list">
-        </div>
 
       </div>
     </div>
@@ -178,9 +160,6 @@
         <div class="cover"></div>
         <h4 class="project-name">Tic, Tac, Toe</h4>
 
-        <div class="tech-list">
-        </div>
-
       </div>
     </div>
 
@@ -189,15 +168,12 @@
         <div class="cover"></div>
         <h4 class="project-name">Snake</h4>
 
-        <div class="tech-list">
-        </div>
-
       </div>
     </div>
 
   </div>
 </section>
-<%# if false %>
+
 
 <section class="further-reading-section container-xl" id="further-reading-section">
   <div class="row flex-column align-items-center">
@@ -269,7 +245,7 @@
             </div>
             <div class="wrapper">
               <%= label_tag :message, "Message:" %>
-              <%= text_field_tag :message, nil, { class: "message-box" } %>
+              <%= text_area_tag :message, nil, { class: "message-box" } %>
             </div>
             <%= submit_tag "Send" %>
           <% end %>
@@ -291,4 +267,3 @@
   </div>
 </section>
 
-<% end %>
