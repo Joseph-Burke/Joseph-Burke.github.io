@@ -293,6 +293,38 @@ html {
 
     .say-hello {
       grid-area: left;
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+
+        .wrapper {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 5px 0;
+
+          label {
+            min-width: 100px;
+            margin: 0;
+            align-self: start;
+          }
+
+          input {
+            flex: 1;
+          }
+
+          .message-box {
+            min-height: 5rem;
+          }
+        }
+
+        input[type="submit"] {
+          margin: 5px 0;
+          width: 100px;
+          align-self: center;
+        }
+      }
     }
 
     .who-i-am {

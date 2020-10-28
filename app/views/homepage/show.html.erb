@@ -1,7 +1,3 @@
-<%# First section. Fills viewport height, stretches full width of screen. %>
-<%# This may need changing to be container xl later so that it won't stretch %>
-<%# ad infinitum. %>
-
 <section class="landing-page-section container-xl">
   <div class="intro-column h-100 col-12 col-lg-8 mx-auto d-flex flex-column align-items-center">
 
@@ -266,15 +262,17 @@
             Feedback on my work helps me improve and is always massively appreciated. Life is short, don’t 
             be shy :)
 
-            <%= form_with do %>
-              <%= label_tag :email, "E-mail:" %>
-              <%= text_field_tag :email  %>
-              <%= label_tag :message, "Message:" %>
-              <%= text_field_tag :message %>
+            <%= form_with class: "contact-form" do %>
+              <div class="wrapper">
+                <%= label_tag :email, "Your E-mail:" %>
+                <%= text_field_tag :email  %>
+              </div>
+              <div class="wrapper">
+                <%= label_tag :message, "Message:" %>
+                <%= text_field_tag :message, nil, { class: "message-box" } %>
+              </div>
               <%= submit_tag "Send" %>
             <% end %>
-
-          </p>
         </div>
       </div>
 
