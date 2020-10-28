@@ -572,50 +572,238 @@ html {
     padding-bottom: 1rem;
 
     .intro-column {
-      padding: 3rem;
-
-      .mobile-view-intro {
-        font-size: 1.4rem;
-        text-align: center;
-        margin-top: 1rem;
+      .central-photo {
+        min-width: 200px;
+        flex-basis: 200px;
       }
-    }
 
-    .tl-dr {
-      .mobile-view {
+      .social-media-links {
+        min-width: 400px;
+
+        a {
+          font-size: 1.75rem;
+          width: 1.7rem;
+          height: 1.7rem;
+        }
+      }
+
+      .name {
+        font-size: 2.4rem;
+        margin-top: 0.5rem;
+      }
+
+      .name-phonetic {
+        font-size: 1.4rem;
+        margin-top: -0.75rem;
+      }
+
+      .definition {
+        font-size: 1.1rem;
+        margin: -0.2rem 0 0 0;
+        font-weight: 500;
+      }
+
+      .dictionary {
+        margin-top: 1rem;
+
+        .tab-bar .tab {
+          font-size: 0.9rem;
+        }
+
+        .collapsed-area {
+          min-height: 210px;
+
+          .card {
+            padding: 1rem 1rem 1rem 0;
+
+            .card-text {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+
+      .mobile-view-intro,
+      .tl-dr .mobile-view {
         display: none;
       }
 
-      .desktop-view {
-        display: inline;
+      .link-list {
+        padding: 0;
+        text-align: center;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        > * {
+          margin: 0 0.2rem;
+        }
+      }
+    }
+  }
+
+  .projects-section {
+    > .row {
+      margin: 0;
+    }
+
+    .header {
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .phonetic-subtitle {
+        font-size: 1rem;
       }
     }
 
-    .central-photo {
-      min-width: $base-photo-size;
-      max-width: $base-photo-size;
-      flex-basis: $base-photo-size;
-      flex-grow: 0;
-      flex-shrink: 0;
-    }
+    .projects-grid {
+      grid-template-rows: repeat(6, 150px);
+      grid-template-columns: 1fr;
+      grid-row-gap: 10px;
 
-    .social-media-links a {
-      font-size: $base-social-link-size;
-      width: $base-social-link-size * 1.5;
-      height: $base-social-link-size * 1.5;
-    }
+      .grid-cell {
+        .card {
+          .cover {
+            bottom: 0;
+            transition: bottom 3s ease;
+          }
 
-    .definition {
+          .project-name {
+            font-size: 2rem;
+            left: 0.5rem;
+          }
+        }
+
+        .card:hover > .cover {
+          bottom: 75%;
+          transition: bottom 2s ease;
+        }
+
+        .train-track .cover {
+          background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/traintrack2.jpeg);
+            background-size: cover;
+        }
+
+        .cop-26 .cover {
+          background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/cop26-4.jpeg);
+            background-size: cover;
+        }
+
+        .icebreaker .cover {
+          background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/icebreaker-2.jpeg);
+          background-size: cover;
+        }
+
+        .a-sailor-a-cook .cover {
+          background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/a-sailor-a-cook.jpeg);
+            background-size: cover;
+        }
+
+        .tic-tac-toe .cover {
+          background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/tic-tac-toe-1.jpeg);
+          background-size: cover;
+          background-position-x: right;
+        }
+
+        .snake .cover {
+          background:
+            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/snake.jpeg);
+          background-size: cover;
+          background-position-x: left;
+        }
+      }
+    }
+  }
+
+  .further-reading-section {
+    .section-title {
       font-size: 2rem;
-      font-weight: 500;
     }
 
-    .name-phonetic {
-      font-size: 2rem;
+    .phonetic-subtitle {
+      font-size: 1rem;
     }
 
-    .dictionary {
-      display: none;
+    .further-reading-grid {
+      display: flex;
+      flex-direction: column;
+
+      .cell .box {
+        .box-title {
+          font-size: 1.4rem;
+        }
+
+        .box-text {
+          font-size: 0.75rem;
+          text-align: center;
+        }
+      }
+
+      .cell:not(:last-of-type) .box {
+        margin-bottom: 2rem;
+      }
+
+      .my-stack {
+        .stack-list {
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          li {
+            flex: 1;
+            list-style-type: none;
+
+            img {
+              max-width: 100%;
+            }
+          }
+
+          li:not(:first-of-type) {
+            margin-left: 0.3rem;
+          }
+
+          li:not(:last-of-type) {
+            margin-right: 0.3rem;
+          }
+        }
+      }
+
+      .cv .box {
+        text-align: center;
+
+        .cv-link {
+          display: inline;
+          margin: 0 auto;
+
+          img {
+            max-width: 50%;
+            // border: 0.5px solid rgba(100, 100, 100, 0.5);
+            box-shadow: 0.5px 0.5px 1px black;
+            outline: 3px solid transparent;
+            transition: outline 1s ease;
+          }
+
+          img:hover {
+            outline: 3px solid rgba(100, 100, 100, 0.5);
+            transition: outline 1s ease;
+          }
+        }
+      }
     }
   }
 }
