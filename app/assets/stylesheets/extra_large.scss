@@ -1,10 +1,7 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .central-photo {
-    min-width: $base-photo-size;
-    max-width: $base-photo-size;
-    flex-basis: $base-photo-size;
-    flex-grow: 0;
-    flex-shrink: 0;
+    min-width: 200px;
+    flex-basis: 200px;
   }
 }

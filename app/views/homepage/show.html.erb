@@ -114,154 +114,155 @@
 
 </section>
 
-<section class="projects-section container-xl d-flex flex-column" id="projects-section">
-  <div class="header row flex-column align-items-center">
-    <h1 class="section-title">Projects</h1>
-    <h4 class="phonetic-subtitle">/ˈprɒdʒ.ekts/</h4>
-  </div>  
+  <section class="projects-section container-xl d-flex flex-column" id="projects-section">
+    <div class="header row flex-column align-items-center">
+      <h1 class="section-title">Projects</h1>
+      <h4 class="phonetic-subtitle">/ˈprɒdʒ.ekts/</h4>
+    </div>  
 
-  <div class="projects-grid row flex-grow-1">
+    <div class="projects-grid row flex-grow-1">
 
-    <div class="grid-cell d-flex">
-      <div class="cop-26 card left-column flex-grow-1">
-        <div class="cover"></div>
-        <h4 class="project-name">COP26</h4>
+      <div class="grid-cell d-flex">
+        <div class="cop-26 card left-column flex-grow-1">
+          <div class="cover"></div>
+          <h4 class="project-name">COP26</h4>
 
+        </div>
       </div>
+
+      <div class="grid-cell d-flex">
+        <div class="card right-column train-track flex-grow-1">
+          <div class="cover"></div>
+          <h4 class="project-name">TrainTrack</h4>
+
+        </div>
+      </div>
+
+      <div class="grid-cell d-flex">
+        <div class="card left-column a-sailor-a-cook flex-grow-1">
+          <div class="cover"></div>
+          <h4 class="project-name">A Sailor, A Cook</h4>
+
+        </div>
+      </div>
+
+      <div class="grid-cell d-flex">
+        <div class="card right-column icebreaker flex-grow-1">
+          <div class="cover"></div>
+          <h4 class="project-name">Icebreaker</h4>
+
+        </div>
+      </div>
+
+      <div class="grid-cell d-flex">
+        <div class="card left-column tic-tac-toe flex-grow-1">
+          <div class="cover"></div>
+          <h4 class="project-name">Tic, Tac, Toe</h4>
+
+        </div>
+      </div>
+
+      <div class="grid-cell d-flex">
+        <div class="card right-column snake flex-grow-1">
+          <div class="cover"></div>
+          <h4 class="project-name">Snake</h4>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="further-reading-section container-xl" id="further-reading-section">
+    <div class="row flex-column align-items-center">
+      <h1 class="section-title">Further Reading</h1>
+      <h4 class="phonetic-subtitle">/ˈfɜːðə ˈriːdɪŋ/</h4>
     </div>
 
-    <div class="grid-cell d-flex">
-      <div class="card right-column train-track flex-grow-1">
-        <div class="cover"></div>
-        <h4 class="project-name">TrainTrack</h4>
+    <div class="further-reading-grid">
+      <div class="who-i-am cell">
+        <div class="box">
+          <h3 class="box-title">Who I Am</h3>
+          <p class="box-text">
+            Beneath the glossy veneer of this impressively professional website is a human being known as 
+            Joe. I have visited and travelled in dozens of countries. I play the piano and the guitar and 
+            I sing and write songs and produce music. I’ve written scores of poems and short stories and 
+            I’ve contributed them to small publications. I lived in East Germany for 14 months, Vietnam 
+            for 3, Thailand for 3, France for 5. I’ve driven motorbikes but never a car. I speak French and 
+            Spanish conversationally and German comically. When I want to exercise, I run, when I want to 
+            think, I walk, when I want to relax, I sit and when I want to feel happy, I cook a big vegan 
+            meal for whoever’s nearby.
+          </p>
+        </div>
+      </div>
 
+      <div class="my-stack cell">
+        <div class="box">
+          <h3 class="box-title">My Stack</h3>
+          <p class="box-text">
+            I’m currently enrolled on a Full-Stack Web Development course with Microverse. The main stack of 
+            the course is as follows: HTML & CSS, Ruby, Ruby on Rails, JavaScript, React & Redux. I’m currently 
+            enrolled on a Full-Stack Web Development course with Microverse. The main stack of the course is 
+            as follows: HTML & CSS, Ruby, Ruby on Rails, JavaScript, React & Redux. I’m currently enrolled on a 
+            Full-Stack Web Development course with Microverse. The main stack of the course is as follows: 
+            HTML & CSS, Ruby, Ruby on Rails, JavaScript, React & Redux. I’m currently enrolled on a Full-Stack 
+            Web Development course with Microverse.
+          </p>
+
+          <ul class="stack-list">
+            <li><img src="/tech-logos/html-5.svg"></li>
+            <li><img src="/tech-logos/css-logo-with-text.png"></li>
+            <li><img src="/tech-logos/sass.svg"></li>
+            <li><img src="/tech-logos/bootstrap-4.svg"></li>
+            <li><img src="/tech-logos/ruby.svg"></li>
+            <li><img src="/tech-logos/rails-1.svg"></li>
+            <li><img src="/tech-logos/javascript.svg"></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="say-hello cell">
+        <div class="box">
+          <h3 class="box-title">Say Hello</h3>
+          <p class="box-text">
+            Whether you’re an employer looking to fill a role, an entrepreneur in need of a website or 
+            just another lost soul wandering aimlessly across this labyrinth we call the Internet, I would 
+            always be pleased and honoured to hear what you have to say. You can can get in touch with me 
+            using the form below, or if you prefer, via 
+            <a href="https://twitter.com/__joeburke">Twitter</a>,
+            <a href="https://www.linkedin.com/in/--joeburke">LinkedIn</a> or
+            <a href="mailto:joseph_burke@outlook.com?subject=Hey Joe!">e-mail</a>.
+
+            Feedback on my work helps me improve and is always massively appreciated. Life is short, don’t 
+            be shy :)
+
+            <%= form_with class: "contact-form" do %>
+              <div class="wrapper">
+                <%= label_tag :email, "Your E-mail:" %>
+                <%= text_field_tag :email  %>
+              </div>
+              <div class="wrapper">
+                <%= label_tag :message, "Message:" %>
+                <%= text_area_tag :message, nil, { class: "message-box" } %>
+              </div>
+              <%= submit_tag "Send" %>
+            <% end %>
+        </div>
+      </div>
+
+      <div class="cv cell">
+        <div class="box">
+          <h3 class="box-title">Curriculum Vitae</h3>
+          <p class="box-text">
+            My résumé is a one-page document which succintly outlines my professional experience and skills and
+            helps prospective employers determine my suitability for a role in their organisation. If either you or 
+            someone you know is looking to fill a role, click below to access and download the document. Many thanks.
+          </p>
+
+          <%= link_to(image_tag("resume.jpeg"), "/resume.pdf", class: "cv-link", target: "_blank") %>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="grid-cell d-flex">
-      <div class="card left-column a-sailor-a-cook flex-grow-1">
-        <div class="cover"></div>
-        <h4 class="project-name">A Sailor, A Cook</h4>
-
-      </div>
-    </div>
-
-    <div class="grid-cell d-flex">
-      <div class="card right-column icebreaker flex-grow-1">
-        <div class="cover"></div>
-        <h4 class="project-name">Icebreaker</h4>
-
-      </div>
-    </div>
-
-    <div class="grid-cell d-flex">
-      <div class="card left-column tic-tac-toe flex-grow-1">
-        <div class="cover"></div>
-        <h4 class="project-name">Tic, Tac, Toe</h4>
-
-      </div>
-    </div>
-
-    <div class="grid-cell d-flex">
-      <div class="card right-column snake flex-grow-1">
-        <div class="cover"></div>
-        <h4 class="project-name">Snake</h4>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="further-reading-section container-xl" id="further-reading-section">
-  <div class="row flex-column align-items-center">
-    <h1 class="section-title">Further Reading</h1>
-    <h4 class="phonetic-subtitle">/ˈfɜːðə ˈriːdɪŋ/</h4>
-  </div>
-
-  <div class="further-reading-grid">
-    <div class="who-i-am cell">
-      <div class="box">
-        <h3 class="box-title">Who I Am</h3>
-        <p class="box-text">
-          Beneath the glossy veneer of this impressively professional website is a human being known as 
-          Joe. I have visited and travelled in dozens of countries. I play the piano and the guitar and 
-          I sing and write songs and produce music. I’ve written scores of poems and short stories and 
-          I’ve contributed them to small publications. I lived in East Germany for 14 months, Vietnam 
-          for 3, Thailand for 3, France for 5. I’ve driven motorbikes but never a car. I speak French and 
-          Spanish conversationally and German comically. When I want to exercise, I run, when I want to 
-          think, I walk, when I want to relax, I sit and when I want to feel happy, I cook a big vegan 
-          meal for whoever’s nearby.
-        </p>
-      </div>
-    </div>
-
-    <div class="my-stack cell">
-      <div class="box">
-        <h3 class="box-title">My Stack</h3>
-        <p class="box-text">
-          I’m currently enrolled on a Full-Stack Web Development course with Microverse. The main stack of 
-          the course is as follows: HTML & CSS, Ruby, Ruby on Rails, JavaScript, React & Redux. I’m currently 
-          enrolled on a Full-Stack Web Development course with Microverse. The main stack of the course is 
-          as follows: HTML & CSS, Ruby, Ruby on Rails, JavaScript, React & Redux. I’m currently enrolled on a 
-          Full-Stack Web Development course with Microverse. The main stack of the course is as follows: 
-          HTML & CSS, Ruby, Ruby on Rails, JavaScript, React & Redux. I’m currently enrolled on a Full-Stack 
-          Web Development course with Microverse.
-        </p>
-
-        <ul class="stack-list">
-          <li><img src="/tech-logos/html-5.svg"></li>
-          <li><img src="/tech-logos/css-logo-with-text.png"></li>
-          <li><img src="/tech-logos/sass.svg"></li>
-          <li><img src="/tech-logos/bootstrap-4.svg"></li>
-          <li><img src="/tech-logos/ruby.svg"></li>
-          <li><img src="/tech-logos/rails-1.svg"></li>
-          <li><img src="/tech-logos/javascript.svg"></li>
-        </ul>
-      </div>
-    </div>
-    
-    <div class="say-hello cell">
-      <div class="box">
-        <h3 class="box-title">Say Hello</h3>
-        <p class="box-text">
-          Whether you’re an employer looking to fill a role, an entrepreneur in need of a website or 
-          just another lost soul wandering aimlessly across this labyrinth we call the Internet, I would 
-          always be pleased and honoured to hear what you have to say. You can can get in touch with me 
-          using the form below, or if you prefer, via 
-          <a href="https://twitter.com/__joeburke">Twitter</a>,
-          <a href="https://www.linkedin.com/in/--joeburke">LinkedIn</a> or
-          <a href="mailto:joseph_burke@outlook.com?subject=Hey Joe!">e-mail</a>.
-
-          Feedback on my work helps me improve and is always massively appreciated. Life is short, don’t 
-          be shy :)
-
-          <%= form_with class: "contact-form" do %>
-            <div class="wrapper">
-              <%= label_tag :email, "Your E-mail:" %>
-              <%= text_field_tag :email  %>
-            </div>
-            <div class="wrapper">
-              <%= label_tag :message, "Message:" %>
-              <%= text_area_tag :message, nil, { class: "message-box" } %>
-            </div>
-            <%= submit_tag "Send" %>
-          <% end %>
-      </div>
-    </div>
-
-    <div class="cv cell">
-      <div class="box">
-        <h3 class="box-title">Curriculum Vitae</h3>
-        <p class="box-text">
-          My résumé is a one-page document which succintly outlines my professional experience and skills and
-          helps prospective employers determine my suitability for a role in their organisation. If either you or 
-          someone you know is looking to fill a role, click below to access and download the document. Many thanks.
-        </p>
-
-        <%= link_to(image_tag("resume.jpeg"), "/resume.pdf", class: "cv-link", target: "_blank") %>
-      </div>
-    </div>
-  </div>
-</section>
-
+  
