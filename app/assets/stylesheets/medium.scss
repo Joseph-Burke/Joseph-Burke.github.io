@@ -140,12 +140,7 @@
           flex-direction: column;
 
           .stack-list {
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 350px;
+            max-width: 450px;
             align-self: center;
 
             li {

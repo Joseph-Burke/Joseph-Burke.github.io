@@ -150,16 +150,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            // align-self: center;
-
-            li {
-              flex: 1;
-              list-style-type: none;
-
-              img {
-                max-width: 100%;
-              }
-            }
 
             li:not(:first-of-type) {
               margin-left: 0.3rem;
