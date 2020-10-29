@@ -93,7 +93,6 @@
 
   .further-reading-section .further-reading-grid {
     display: grid;
-    grid-template-rows: 400px 500px;
     grid-template-columns: 2fr 3fr 2fr;
     grid-template-areas:
     "left center right-top"
@@ -104,13 +103,14 @@
       flex-direction: column;
       padding: 1rem;
     }
-    
+
     .box {
       flex: 1;
       padding: 1rem;
 
-      .box-text {
-        font-size: 1rem;
+      .box-text,
+      form {
+        font-size: 1.2rem;
       }
     }
 
