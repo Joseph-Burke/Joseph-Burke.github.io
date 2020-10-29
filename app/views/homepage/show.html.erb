@@ -101,13 +101,13 @@
   </div>
 
     <ul class="link-list">
-      <a href="#further-reading-section">Who I Am</a>
+      <a href="#who-i-am">Who I Am</a>
       <span>•</span>
       <a href="#projects-section">My Projects</a>
       <span>•</span>
-      <a href="#further-reading-section">My Stack</a>
+      <a href="#my-stack">My Stack</a>
       <span>•</span>
-      <a href="#further-reading-section">Curriculum Vitae</a>
+      <a href="#cv">Curriculum Vitae</a>
   </div>
   </div>
 
@@ -180,7 +180,7 @@
   </div>
 
   <div class="further-reading-grid">
-    <div class="who-i-am cell">
+    <div class="who-i-am cell" id="who-i-am">
       <div class="box">
         <h3 class="box-title">Who I Am</h3>
         <p class="box-text">
@@ -196,7 +196,7 @@
       </div>
     </div>
 
-    <div class="my-stack cell">
+    <div class="my-stack cell" id="my-stack">
       <div class="box">
         <h3 class="box-title">My Stack</h3>
         <p class="box-text">
@@ -251,7 +251,7 @@
       </div>
     </div>
 
-    <div class="cv cell">
+    <div class="cv cell" id="cv">
       <div class="box">
         <h3 class="box-title">Curriculum Vitae</h3>
         <p class="box-text">
@@ -259,9 +259,9 @@
           helps prospective employers determine my suitability for a role in their organisation. If either you or 
           someone you know is looking to fill a role, click below to access and download the document. Many thanks.
         </p>
-        <% if false %>
-        <%= link_to(image_tag("resume.jpeg"), "/resume.pdf", class: "cv-link", target: "_blank") %>
-        <% end %>
+
+        <%= link_to("View Résumé", "/resume.pdf", class: "btn btn-primary", target: "_blank") %>
+
       </div>
     </div>
   </div>
