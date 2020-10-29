@@ -157,13 +157,6 @@ html {
     }
   }
 
-  .left-column:hover {
-    > .cover {
-      bottom: 80%;
-      transition: bottom 2s ease;
-    }
-  }
-
   .right-column {
     justify-content: flex-start;
 
