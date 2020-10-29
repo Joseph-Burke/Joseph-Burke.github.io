@@ -1,0 +1,10 @@
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .central-photo {
+    min-width: $base-photo-size;
+    max-width: $base-photo-size;
+    flex-basis: $base-photo-size;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}
