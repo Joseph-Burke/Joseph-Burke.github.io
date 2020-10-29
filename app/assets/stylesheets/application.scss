@@ -206,11 +206,12 @@ html {
       .box {
         border: 1px solid grey;
 
-        .box-title {
+        .box-title,
+        .box-text {
           text-align: center;
         }
 
-        p {
+        .box-text {
           margin: 0;
         }
       }
