@@ -45,12 +45,26 @@
   .projects-section .projects-grid {
     grid-auto-rows: 200px;
     grid-template-columns: 1fr 1fr;
+
     .grid-cell {
       padding: 10px;
 
-      .left-column .cover {
-        right: 0;
-        transition: right 3s ease;
+      .card {
+        .project-name {
+          bottom: 0.25rem;
+          font-size: 3rem;
+        }
+      }
+
+      .left-column {
+        .project-name {
+          left: 0.5rem;
+        }
+
+        .cover {
+          right: 0;
+          transition: right 3s ease;
+        }
       }
 
       .left-column:hover .cover {
@@ -58,9 +72,16 @@
         transition: right 2s ease;
       }
 
-      .right-column .cover {
-        left: 0;
-        transition: left 3s ease;
+      .right-column {
+        .project-name {
+          text-align: right;
+          right: 0.5rem;
+        }
+
+        .cover {
+          left: 0;
+          transition: left 3s ease;
+        }
       }
 
       .right-column:hover .cover {
