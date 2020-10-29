@@ -172,7 +172,7 @@
 
   </div>
 </section>
-<% if false %>
+
 <section class="further-reading-section container-xl" id="further-reading-section">
   <div class="row flex-column align-items-center">
     <h1 class="section-title">Further Reading</h1>
@@ -208,7 +208,7 @@
           HTML & CSS, Ruby, Ruby on Rails, JavaScript, React & Redux. I’m currently enrolled on a Full-Stack 
           Web Development course with Microverse.
         </p>
-
+        <% if false %>
         <ul class="stack-list">
           <li><img src="/tech-logos/html-5.svg"></li>
           <li><img src="/tech-logos/css-logo-with-text.png"></li>
@@ -218,6 +218,7 @@
           <li><img src="/tech-logos/rails-1.svg"></li>
           <li><img src="/tech-logos/javascript.svg"></li>
         </ul>
+        <% end %>
       </div>
     </div>
     
@@ -258,10 +259,10 @@
           helps prospective employers determine my suitability for a role in their organisation. If either you or 
           someone you know is looking to fill a role, click below to access and download the document. Many thanks.
         </p>
-
+        <% if false %>
         <%= link_to(image_tag("resume.jpeg"), "/resume.pdf", class: "cv-link", target: "_blank") %>
+        <% end %>
       </div>
     </div>
   </div>
 </section>
-<% end %>
