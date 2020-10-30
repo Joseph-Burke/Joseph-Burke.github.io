@@ -242,8 +242,17 @@
     }
   }
 
-  .further-reading-section .further-reading-grid .cell .box {
-    padding: 1.5rem 1.5rem;
+  .further-reading-section .further-reading-grid {
+    .cell .box {
+      padding: 1.5rem 1.5rem;
+    }
+
+    .say-hello .box {
+      .contact-form,
+      .contact-form > *:not(:nth-child(2)) {
+        margin-top: 1rem;
+      }
+    }
   }
 }
 
