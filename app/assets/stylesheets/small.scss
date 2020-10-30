@@ -206,3 +206,12 @@
     }
   }
 }
+
+@media (min-width: 576px) {
+  .landing-page-section {
+    min-height: 700px;
+    .intro-column .dictionary .collapsed-area {
+      min-height: 210px;
+    }
+  }
+}

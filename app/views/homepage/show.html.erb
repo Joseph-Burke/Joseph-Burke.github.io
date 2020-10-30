@@ -208,7 +208,6 @@
           HTML & CSS, Ruby, Ruby on Rails, JavaScript, React & Redux. I’m currently enrolled on a Full-Stack 
           Web Development course with Microverse.
         </p>
-        <%# if false %>
         <ul class="stack-list">
           <li><img src="/tech-logos/html-5.svg"></li>
           <li><img src="/tech-logos/css-logo-with-text.png"></li>
@@ -218,7 +217,6 @@
           <li><img src="/tech-logos/rails-1.svg"></li>
           <li><img src="/tech-logos/javascript.svg"></li>
         </ul>
-        <%# end %>
       </div>
     </div>
     
@@ -238,14 +236,8 @@
           be shy :)
 
           <%= form_with class: "contact-form" do %>
-            <div class="wrapper">
-              <%= label_tag :email, "Your E-mail:" %>
-              <%= text_field_tag :email  %>
-            </div>
-            <div class="wrapper">
-              <%= label_tag :message, "Message:" %>
-              <%= text_area_tag :message, nil, { class: "message-box" } %>
-            </div>
+            <%= text_field_tag :email, nil, placeholder: "What's your e-mail address? (optional)"  %>
+            <%= text_area_tag :message, nil, { class: "message-box", placeholder: "What do you want to say?" } %>
             <%= submit_tag "Send" %>
           <% end %>
       </div>
