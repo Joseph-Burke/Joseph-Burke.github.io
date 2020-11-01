@@ -1,11 +1,11 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-
   .projects-section,
   .further-reading-section {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+
   .landing-page-section {
     .intro-column {
       padding: 3rem 0;
@@ -82,11 +82,61 @@
       .card {
         .project-name {
           bottom: 0.25rem;
-          font-size: 3.5rem;
+          font-size: 3.2rem;
+        }
+
+        .tech-list {
+          flex: 0 0 60px;
+          padding: 5px 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          li {
+            flex-shrink: 1;
+            list-style-type: none;
+
+            img {
+              max-width: 100%;
+              max-height: 100%;
+            }
+          }
+        }
+
+        .card-body {
+          flex: 0 0 calc(80% - 60px);
+          padding: 0;
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: flex-end;
+
+          .project-description {
+            flex: 1;
+            padding: 5px 5px 0 5px;
+            margin: 0;
+            font-size: 0.9rem;
+          }
+
+          .nav-bar {
+            width: 100%;
+            display: flex;
+            justify-self: flex-start;
+
+            .btn {
+              padding: 0;
+              font-size: 0.8rem;
+              flex: 1;
+              margin: 0 5px;
+              max-width: calc(33.3% - 10px);
+            }
+          }
         }
       }
 
       .left-column {
+        flex-direction: row-reverse;
+
         .project-name {
           left: 0.5rem;
         }
@@ -103,6 +153,7 @@
       }
 
       .right-column {
+        flex-direction: row;
         .project-name {
           text-align: right;
           right: 0.5rem;
@@ -221,7 +272,6 @@
 
       .my-stack {
         grid-area: right-top;
-        // .tech-list
       }
     }
   }
