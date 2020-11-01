@@ -165,9 +165,6 @@
 
       .cv .box {
         text-align: center;
-
-        .cv-link {
-        }
       }
 
       .say-hello .box .contact-form {
@@ -194,6 +191,7 @@
     .grid-cell {
       .card {
         padding-left: 5px;
+
         .tech-list {
           flex: 0 0 28px;
           height: 75%;
@@ -204,6 +202,7 @@
           flex-direction: column;
           justify-content: space-between;
           align-items: center;
+
           li {
             flex-shrink: 1;
             list-style-type: none;
@@ -245,6 +244,7 @@
           }
         }
       }
+
       .card:hover {
         > .cover {
           bottom: 75%;
@@ -261,7 +261,7 @@
         }
       }
 
-    .train-track .cover {
+      .train-track .cover {
         background:
           linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
           url(/traintrack2.jpeg);

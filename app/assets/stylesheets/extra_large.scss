@@ -1,12 +1,12 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-
   .landing-page-section {
     .intro-column {
       .central-photo {
         min-width: 300px;
         flex-basis: 300px;
       }
+
       .social-media-links {
         min-width: 600px;
       }
@@ -15,44 +15,44 @@
 
   .further-reading-section {
     .further-reading-grid {
-        display: grid;
-        grid-template-columns: 2fr 2fr 2fr;
-        grid-template-areas:
+      display: grid;
+      grid-template-columns: 2fr 2fr 2fr;
+      grid-template-areas:
         "left center right-top"
         "left center right-bottom";
 
-        .cell {
-          display: flex;
-          flex-direction: column;
+      .cell {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+        .box {
+          flex: 1;
           padding: 1rem;
 
-          .box {
-            flex: 1;
-            padding: 1rem;
-
-            .box-text,
-            form {
-              font-size: 1.2rem;
-            }
+          .box-text,
+          form {
+            font-size: 1.2rem;
           }
         }
-
-        .say-hello {
-          grid-area: left;
-        }
-
-        .cv {
-          grid-area: right-bottom;
-        }
-
-        .who-i-am {
-          grid-area: center;
-        }
-
-        .my-stack {
-          grid-area: right-top;
-          // .tech-list
-        }
       }
+
+      .say-hello {
+        grid-area: left;
+      }
+
+      .cv {
+        grid-area: right-bottom;
+      }
+
+      .who-i-am {
+        grid-area: center;
+      }
+
+      .my-stack {
+        grid-area: right-top;
+        // .tech-list
+      }
+    }
   }
 }

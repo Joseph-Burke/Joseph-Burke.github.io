@@ -148,16 +148,6 @@ html {
     flex: 1;
   }
 
-  .card:hover .project-name {
-    color: rgba(0, 0, 0, 0.9);
-    transition: color 2s ease, text-shadow 2s ease;
-    text-shadow:
-      0.25px 0.25px 1px rgba(255, 255, 255, 0.9),
-      -0.25px 0.25px 1px rgba(255, 255, 255, 0.9),
-      0.25px -0.25px 1px rgba(255, 255, 255, 0.9),
-      -0.25px -0.25px 1px rgba(255, 255, 255, 0.9);
-  }
-
   .card {
     overflow: hidden;
     display: flex;
@@ -191,6 +181,16 @@ html {
         max-width: 100%;
       }
     }
+  }
+
+  .card:hover .project-name {
+    color: rgba(0, 0, 0, 0.9);
+    transition: color 2s ease, text-shadow 2s ease;
+    text-shadow:
+      0.25px 0.25px 1px rgba(255, 255, 255, 0.9),
+      -0.25px 0.25px 1px rgba(255, 255, 255, 0.9),
+      0.25px -0.25px 1px rgba(255, 255, 255, 0.9),
+      -0.25px -0.25px 1px rgba(255, 255, 255, 0.9);
   }
 }
 
@@ -281,10 +281,3 @@ html {
     }
   }
 }
-
-// POSSIBLE TEXT-SHADOW STYLING FOR PROJECT CARD TITLES.
-// text-shadow: 
-//   1px 1px rgba(255, 255, 255, 0.5), 
-//   -1px 1px rgba(255, 255, 255, 0.5), 
-//   1px -1px rgba(255, 255, 255, 0.5), 
-//   -1px -1px rgba(255, 255, 255, 0.5);
