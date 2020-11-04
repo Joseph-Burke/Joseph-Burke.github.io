@@ -1,0 +1,284 @@
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .projects-section,
+  .further-reading-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .landing-page-section {
+    .intro-column {
+      padding: 3rem 0;
+
+      .central-photo {
+        min-width: 250px;
+        flex-basis: 250px;
+      }
+
+      .name {
+        font-size: 3rem;
+        margin: 0 0 0 8px;
+      }
+
+      .name-phonetic {
+        font-size: 1.75rem;
+        margin: 0 12.5px 10px 0;
+      }
+
+      .definition {
+        margin: -7px 0 0 0;
+        font-size: 1.35rem;
+      }
+
+      .social-media-links {
+        min-width: 500px;
+
+        .link-container a {
+          font-size: 2rem;
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+
+      .dictionary {
+        margin: 10px 0 0 0;
+
+        .tab-bar button {
+          font-size: 1.25rem;
+        }
+
+        .collapsed-area {
+          height: 250px;
+
+          h6 {
+            font-size: 2rem;
+          }
+
+          .card-text {
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      .tl-dr,
+      .link-list {
+        justify-self: flex-end;
+        font-size: 1.25rem;
+      }
+
+      .link-list {
+        padding: 0;
+      }
+    }
+  }
+
+  .projects-section .projects-grid {
+    grid-auto-rows: 300px;
+    grid-template-columns: 1fr 1fr;
+
+    .grid-cell {
+      padding: 15px;
+
+      .card {
+        .project-name {
+          bottom: 0.25rem;
+          font-size: 3.2rem;
+        }
+
+        .tech-list {
+          flex: 0 0 60px;
+          padding: 5px 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+
+          li {
+            flex-shrink: 1;
+            list-style-type: none;
+
+            img {
+              max-width: 100%;
+              max-height: 100%;
+            }
+          }
+        }
+
+        .card-body {
+          flex: 0 0 calc(80% - 60px);
+          padding: 0;
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: flex-end;
+
+          .project-description {
+            flex: 1;
+            padding: 5px 5px 0 5px;
+            margin: 0;
+            font-size: 0.9rem;
+          }
+
+          .nav-bar {
+            width: 100%;
+            display: flex;
+            justify-self: flex-start;
+
+            .btn {
+              padding: 0;
+              font-size: 0.8rem;
+              flex: 1;
+              margin: 0 5px;
+              max-width: calc(33.3% - 10px);
+            }
+          }
+        }
+      }
+
+      .left-column {
+        flex-direction: row-reverse;
+
+        .project-name {
+          left: 0.5rem;
+        }
+
+        .cover {
+          right: 0;
+          transition: right 3s ease;
+        }
+      }
+
+      .left-column:hover .cover {
+        right: 80%;
+        transition: right 2s ease;
+      }
+
+      .right-column {
+        flex-direction: row;
+
+        .project-name {
+          text-align: right;
+          right: 0.5rem;
+        }
+
+        .cover {
+          left: 0;
+          transition: left 3s ease;
+        }
+      }
+
+      .right-column:hover .cover {
+        left: 80%;
+        transition: left 2s ease;
+      }
+
+      .train-track .cover {
+        background:
+          linear-gradient(270deg, rgba(0, 0, 0, 0.5), transparent),
+          url(/traintrack2.jpeg);
+        background-size: cover;
+      }
+
+      .cop-26 .cover {
+        background:
+          linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent),
+          url(/cop26-4.jpeg);
+        background-size: cover;
+      }
+
+      .icebreaker .cover {
+        background:
+          linear-gradient(270deg, rgba(0, 0, 0, 0.5), transparent),
+          url(/icebreaker-2.jpeg);
+        background-size: cover;
+      }
+
+      .a-sailor-a-cook .cover {
+        background:
+          linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent),
+          url(/a-sailor-a-cook.jpeg);
+        background-size: cover;
+      }
+
+      .tic-tac-toe .cover {
+        background:
+          linear-gradient(270deg, rgba(0, 0, 0, 0.5), transparent),
+          url(/tic-tac-toe-1.jpeg);
+        background-size: cover;
+        background-position-x: right;
+      }
+
+      .snake .cover {
+        background:
+          linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent),
+          url(/snake.jpeg);
+        background-size: cover;
+        background-position-x: left;
+      }
+    }
+  }
+
+  .further-reading-section {
+    padding-left: 0;
+    padding-right: 0;
+
+    .further-reading-grid {
+      display: grid;
+      grid-template-columns: 4fr 5fr 4fr;
+      grid-template-areas:
+        "left center right-top"
+        "left center right-bottom";
+
+      .cell {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+        .box {
+          flex: 1;
+          padding: 1rem;
+
+          .box-text,
+          form {
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      .say-hello {
+        grid-area: left;
+
+        .box {
+          display: flex;
+          flex-direction: column;
+
+          form {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            *:not(:first-child) {
+              margin-top: 20px;
+            }
+
+            .message-box {
+              flex: 1;
+            }
+          }
+        }
+      }
+
+      .cv {
+        grid-area: right-bottom;
+      }
+
+      .who-i-am {
+        grid-area: center;
+      }
+
+      .my-stack {
+        grid-area: right-top;
+      }
+    }
+  }
+}
