@@ -40,26 +40,6 @@
         }
       }
 
-      .dictionary {
-        margin: 10px 0 0 0;
-
-        .tab-bar button {
-          font-size: 1.25rem;
-        }
-
-        .collapsed-area {
-          height: 250px;
-
-          h6 {
-            font-size: 2rem;
-          }
-
-          .card-text {
-            font-size: 1.2rem;
-          }
-        }
-      }
-
       .tl-dr,
       .link-list {
         justify-self: flex-end;

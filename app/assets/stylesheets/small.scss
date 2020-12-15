@@ -209,10 +209,10 @@
 
 @media (min-width: 576px) {
   .landing-page-section {
-    min-height: 700px;
+    min-height: 100vh;
 
-    .intro-column .dictionary .collapsed-area {
-      min-height: 210px;
+    .link-list {
+      margin-top: 200px;
     }
   }
 }
