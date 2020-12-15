@@ -194,6 +194,14 @@
     padding: 2rem 1rem;
   }
 
+  .projects-section .projects-grid {
+    grid-template-rows: repeat(6, 250px);
+    .grid-cell .card .card-body {
+      font-size: 0.7rem;
+      line-height: 0.9rem;
+    }
+  }
+
   .further-reading-section .further-reading-grid {
     .cell .box .my-stack .box {
       display: flex;
