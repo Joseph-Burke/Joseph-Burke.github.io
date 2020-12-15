@@ -254,45 +254,39 @@
 
       .cop-26 {
         .cover {
-          background:
-            linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
-            url(/cop26-4.jpeg);
+          background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent),
+            url(/COP26-4.jpeg);
           background-size: cover;
         }
       }
 
       .train-track .cover {
-        background:
-          linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
           url(/traintrack2.jpeg);
         background-size: cover;
       }
 
       .icebreaker .cover {
-        background:
-          linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
           url(/icebreaker-2.jpeg);
         background-size: cover;
       }
 
       .a-sailor-a-cook .cover {
-        background:
-          linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
           url(/a-sailor-a-cook.jpeg);
         background-size: cover;
       }
 
       .tic-tac-toe .cover {
-        background:
-          linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
           url(/tic-tac-toe-1.jpeg);
         background-size: cover;
         background-position-x: right;
       }
 
       .snake .cover {
-        background:
-          linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
           url(/snake.jpeg);
         background-size: cover;
         background-position-x: left;
