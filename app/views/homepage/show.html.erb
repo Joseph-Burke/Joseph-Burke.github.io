@@ -261,12 +261,6 @@
           love job offers.<br> You can <a href="https://twitter.com/__joeburke" target="_blank">write me a tweet</a>, 
           <a href="https://www.linkedin.com/in/--joeburke" target="_blank">send me a message on LinkedIn</a> or 
           <a href="mailto:joseph_burke@outlook.com?subject=Hey Joe!" target="_blank">shoot me an e-mail</a>.<br>
-          Or just drop me a line right here!<br>
-          <%= form_with class: "contact-form" do %>
-            <%= text_field_tag :email, nil, placeholder: "What's your e-mail address?" %>
-            <%= text_area_tag :message, nil, { class: "message-box", placeholder: "What do you want to say?" } %>
-            <%= submit_tag "Send" %>
-          <% end %>
       </div>
     </div>
 
@@ -274,8 +268,7 @@
       <div class="box">
         <h3 class="box-title">Curriculum Vitae</h3>
         <p class="box-text">
-          My résumé is a one-page document with information about my education, professional experience and skills.
-          If you or someone you know is looking to fill a role, hit the button below to download it. Thanks!
+          If you or someone you know is looking to fill a role, hit the button below to download my résumé. Thanks!
         </p>
 
         <%= link_to("View Résumé", "/resume.pdf", class: "btn btn-primary", target: "_blank") %>

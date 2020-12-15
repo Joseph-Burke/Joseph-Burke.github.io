@@ -204,10 +204,10 @@
 
     .further-reading-grid {
       display: grid;
-      grid-template-columns: 4fr 5fr 4fr;
+      grid-template-columns: 9fr 6fr;
       grid-template-areas:
-        "left center right-top"
-        "left center right-bottom";
+        "left-top right-top"
+        "left-bottom right-bottom";
 
       .cell {
         display: flex;
@@ -226,7 +226,7 @@
       }
 
       .say-hello {
-        grid-area: left;
+        grid-area: left-bottom;
 
         .box {
           display: flex;
@@ -253,7 +253,7 @@
       }
 
       .who-i-am {
-        grid-area: center;
+        grid-area: left-top;
       }
 
       .my-stack {

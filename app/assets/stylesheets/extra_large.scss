@@ -12,47 +12,4 @@
       }
     }
   }
-
-  .further-reading-section {
-    .further-reading-grid {
-      display: grid;
-      grid-template-columns: 2fr 2fr 2fr;
-      grid-template-areas:
-        "left center right-top"
-        "left center right-bottom";
-
-      .cell {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-
-        .box {
-          flex: 1;
-          padding: 1rem;
-
-          .box-text,
-          form {
-            font-size: 1.2rem;
-          }
-        }
-      }
-
-      .say-hello {
-        grid-area: left;
-      }
-
-      .cv {
-        grid-area: right-bottom;
-      }
-
-      .who-i-am {
-        grid-area: center;
-      }
-
-      .my-stack {
-        grid-area: right-top;
-        // .tech-list
-      }
-    }
-  }
 }
