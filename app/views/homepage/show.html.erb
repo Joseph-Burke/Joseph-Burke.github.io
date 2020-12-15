@@ -51,6 +51,63 @@
   <div class="projects-grid row flex-grow-1">
 
     <div class="grid-cell d-flex">
+      <div class="card left-column robbin-hoodz flex-grow-1">
+        <div class="cover"></div>
+        <h4 class="project-name">Robbin' Hoodz</h4>
+
+        <ul class="tech-list">
+          <li><img src="/tech-logos/javascript.svg"></li>
+          <li><img src="/tech-logos/phaser_logo.png"></li>
+          <li><img src="/tech-logos/webpack_logo.png"></li>
+        </ul>
+
+        <div class="card-body">
+        
+          <p class="project-description">
+            Robbin’ Hoodz is a 2D ‘endless runner’ browser game built with PhaserJS for my JavaScript capstone. While using Phaser 
+            was a new experience for me, this project involved many established skills and competencies of mine, using npm, webpack,
+            Jest and ESLint to produce modular, testable and readable code. The final result of this project is, in my opinion, one 
+            of my best creations to date and was awarded "Project of the Week” on Career Karma.
+          </p>
+
+          <div class="nav-bar">
+            <%= link_to "Code", "https://github.com/Joseph-Burke/Robbin-Hoodz#readme", class: "btn btn-primary", target: "_blank" %>
+            <%= link_to "Live Demo", "https://keen-leakey-c08599.netlify.app/", class: "btn btn-primary", target: "_blank" %>
+          </div>
+        </div>  
+
+      </div>
+    </div>
+
+    <div class="grid-cell d-flex">
+      <div class="card right-column train-track flex-grow-1">
+        <div class="cover"></div>
+        <h4 class="project-name">TrainTrack</h4>
+
+        <ul class="tech-list">
+          <li><img src="/tech-logos/rails-1.svg"></li>
+          <li><img src="/tech-logos/ruby.svg"></li>    
+          <li><img src="/tech-logos/sass.svg"></li>
+        </ul>     
+
+        <div class="card-body">
+            <p class="project-description">
+                TrainTrack is a mobile time-tracking application I created as my capstone project for the Ruby on Rails module of the Microverse course. 
+                The app uses PostgreSQL as its database to store information about users, the transactions they make and the “groups” that those transactions belong to, 
+                all of which then supplies the front-end with the correct information to display, according to the Model-View-Controller framework. 
+            </p>
+
+          <div class="nav-bar">
+            <%= link_to "Code", "https://github.com/Joseph-Burke/TrainTrack#readme", class: "btn btn-primary", target: "_blank" %>
+            <%= link_to "Live Demo", "https://intense-beach-76998.herokuapp.com/", class: "btn btn-primary", target: "_blank" %>
+            <%= link_to "Video", "https://www.loom.com/share/8f0b7b74b00046f0ab091d769edd68f9", class: "btn btn-primary", target: "_blank" %>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="grid-cell d-flex">
       <div class="cop-26 card left-column flex-grow-1">
         <div class="cover"></div>
         <h4 class="project-name">COP26</h4>
@@ -80,29 +137,30 @@
     </div>
 
     <div class="grid-cell d-flex">
-      <div class="card right-column train-track flex-grow-1">
+      <div class="card right-column gust flex-grow-1">
         <div class="cover"></div>
-        <h4 class="project-name">TrainTrack</h4>
+        <h4 class="project-name">Gust</h4>
 
         <ul class="tech-list">
-          <li><img src="/tech-logos/rails-1.svg"></li>
-          <li><img src="/tech-logos/ruby.svg"></li>    
-          <li><img src="/tech-logos/sass.svg"></li>
-        </ul>     
+          <li><img src="/tech-logos/javascript.svg"></li>
+          <li><img src="/tech-logos/bootstrap-4.svg"></li>
+          <li><img src="/tech-logos/webpack_logo.png"></li>
+        </ul>
 
         <div class="card-body">
-            <p class="project-description">
-                TrainTrack is a mobile time-tracking application I created as my capstone project for the Ruby on Rails module of the Microverse course. 
-                The app uses PostgreSQL as its database to store information about users, the transactions they make and the “groups” that those transactions belong to, 
-                all of which then supplies the front-end with the correct information to display, according to the Model-View-Controller framework. 
-            </p>
+
+          <p class="project-description">
+            Gust is a web app that fetches and displays information about the current weather in any of the world's major cities. 
+            It was a small project I built during the JavaScript module on the Microverse course to demonstrate my mastery of API 
+            calls and asynchronous JS. The app simply takes the name of one of the world’s cities as its input and presents a card 
+            with basic information about the current weather in that city.
+          </p>
 
           <div class="nav-bar">
-            <%= link_to "Code", "https://github.com/Joseph-Burke/TrainTrack#readme", class: "btn btn-primary", target: "_blank" %>
-            <%= link_to "Live Demo", "https://intense-beach-76998.herokuapp.com/", class: "btn btn-primary", target: "_blank" %>
-            <%= link_to "Video", "https://www.loom.com/share/8f0b7b74b00046f0ab091d769edd68f9", class: "btn btn-primary", target: "_blank" %>
+            <%= link_to "Code", "https://github.com/Joseph-Burke/Gust#readme", class: "btn btn-primary", target: "_blank" %>
+            <%= link_to "Live Demo", "http://rawcdn.githack.com/Joseph-Burke/Gust/80d2614d2a94e984b6edf17b3dc97f388f5aa709/dist/index.html/", class: "btn btn-primary", target: "_blank" %>
           </div>
-        </div>
+        </div>  
 
       </div>
     </div>
@@ -155,64 +213,6 @@
 
           <div class="nav-bar">
             <%= link_to "Code", "https://github.com/Joseph-Burke/Icebreaker#readme", class: "btn btn-primary", target: "_blank" %>
-          </div>
-        </div>  
-
-      </div>
-    </div>
-
-    <div class="grid-cell d-flex">
-      <div class="card left-column gust flex-grow-1">
-        <div class="cover"></div>
-        <h4 class="project-name">Gust</h4>
-
-        <ul class="tech-list">
-          <li><img src="/tech-logos/javascript.svg"></li>
-          <li><img src="/tech-logos/bootstrap-4.svg"></li>
-          <li><img src="/tech-logos/webpack_logo.png"></li>
-        </ul>
-
-        <div class="card-body">
-
-          <p class="project-description">
-            Gust is a web app that fetches and displays information about the current weather in any of the world's major cities. 
-            It was a small project I built during the JavaScript module on the Microverse course to demonstrate my mastery of API 
-            calls and asynchronous JS. The app simply takes the name of one of the world’s cities as its input and presents a card 
-            with basic information about the current weather in that city.
-          </p>
-
-          <div class="nav-bar">
-            <%= link_to "Code", "https://github.com/Joseph-Burke/Gust#readme", class: "btn btn-primary", target: "_blank" %>
-            <%= link_to "Live Demo", "http://rawcdn.githack.com/Joseph-Burke/Gust/80d2614d2a94e984b6edf17b3dc97f388f5aa709/dist/index.html/", class: "btn btn-primary", target: "_blank" %>
-          </div>
-        </div>  
-
-      </div>
-    </div>
-
-    <div class="grid-cell d-flex">
-      <div class="card right-column robbin-hoodz flex-grow-1">
-        <div class="cover"></div>
-        <h4 class="project-name">Robbin' Hoodz</h4>
-
-        <ul class="tech-list">
-          <li><img src="/tech-logos/javascript.svg"></li>
-          <li><img src="/tech-logos/phaser_logo.png"></li>
-          <li><img src="/tech-logos/webpack_logo.png"></li>
-        </ul>
-
-        <div class="card-body">
-        
-          <p class="project-description">
-            Robbin’ Hoodz is a 2D ‘endless runner’ browser game built with PhaserJS for my JavaScript capstone. While using Phaser 
-            was a new experience for me, this project involved many established skills and competencies of mine, using npm, webpack,
-            Jest and ESLint to produce modular, testable and readable code. The final result of this project is, in my opinion, one 
-            of my best creations to date and was awarded "Project of the Week” on Career Karma.
-          </p>
-
-          <div class="nav-bar">
-            <%= link_to "Code", "https://github.com/Joseph-Burke/Robbin-Hoodz#readme", class: "btn btn-primary", target: "_blank" %>
-            <%= link_to "Live Demo", "https://keen-leakey-c08599.netlify.app/", class: "btn btn-primary", target: "_blank" %>
           </div>
         </div>  
 
