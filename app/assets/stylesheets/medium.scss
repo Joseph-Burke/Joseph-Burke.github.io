@@ -36,10 +36,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
-        > * {
-          margin: 0 0.2rem;
-        }
       }
     }
   }
@@ -146,10 +142,18 @@
 }
 
 @media (max-width: 991px) {
-  .landing-page-section .intro-column .central-photo {
-    min-width: 200px;
-    flex-basis: 200px;
+  .landing-page-section .intro-column {
+    .central-photo {
+      min-width: 200px;
+      flex-basis: 200px;
+    }
+
+    .link-list {
+      margin-top: calc(100vh - 420px);
+    }
   }
+  
+
 
   .projects-section .projects-grid {
     grid-template-columns: 1fr;

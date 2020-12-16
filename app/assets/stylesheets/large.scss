@@ -34,14 +34,11 @@
         }
       }
 
-      .tl-dr,
       .link-list {
         justify-self: flex-end;
         font-size: 1.25rem;
-      }
-
-      .link-list {
         padding: 0;
+        margin-top: calc(100vh - 590px);
       }
     }
   }
