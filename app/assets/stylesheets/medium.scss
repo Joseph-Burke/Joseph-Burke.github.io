@@ -253,26 +253,27 @@
       }
 
       .cop-26 .cover {
-          background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent),
-            url(/COP26-4.jpeg);
-          background-size: cover;
-        }
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent),
+          url(/cop26_screenshot.png);
+        background-size: cover;
+      }
 
       .train-track .cover {
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
-          url(/traintrack2.jpeg);
+          url(/train_track_screenshot.jpg);
         background-size: cover;
+        background-position: center;
       }
 
       .icebreaker .cover {
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
-          url(/icebreaker-2.jpeg);
+          url(/icebreaker_screenshot.png);
         background-size: cover;
       }
 
       .a-sailor-a-cook .cover {
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
-          url(/a-sailor-a-cook.jpeg);
+          url(/a_sailor_a_cook_screenshot.png);
         background-size: cover;
       }
 
@@ -286,6 +287,8 @@
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
           url(/gust_screenshot.png);
         background-size: cover;
+        background-position-y: top;
+        background-position-x: center;
       }
     }
   }
