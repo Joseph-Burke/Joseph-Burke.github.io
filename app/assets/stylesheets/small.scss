@@ -58,7 +58,6 @@
       .link-list {
         padding: 0;
         text-align: center;
-        margin: 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -202,16 +201,6 @@
         max-width: 350px;
         align-self: center;
       }
-    }
-  }
-}
-
-@media (min-width: 576px) {
-  .landing-page-section {
-    min-height: 100vh;
-
-    .link-list {
-      margin-top: 200px;
     }
   }
 }

@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: quicksand;
-  src: local('/public/assets/fonts/quicksand/Quicksand-VariableFont_wght.ttf');
+  src: local("/public/assets/fonts/quicksand/Quicksand-VariableFont_wght.ttf");
 }
 
 $quicksand: quicksand, sans-serif;
@@ -12,9 +12,15 @@ $font-family-sans-serif: $quicksand;
 
 $spacer: 1rem !default;
 $spacers: (
-  6: ($spacer * 5),
-  7: ($spacer * 7.5),
-  8: ($spacer * 10)
+  6: (
+    $spacer * 5
+  ),
+  7: (
+    $spacer * 7.5
+  ),
+  8: (
+    $spacer * 10
+  )
 );
 $container-max-widths: (
   xl: 1600px
@@ -25,11 +31,11 @@ $container-max-widths: (
 $base-photo-size: 150px;
 $base-social-link-size: 3rem;
 
-@import 'extra_small';
-@import 'small';
-@import 'medium';
-@import 'large';
-@import 'extra_large';
+@import "extra_small";
+@import "small";
+@import "medium";
+@import "large";
+@import "extra_large";
 
 html {
   font-size: 16px;
@@ -40,8 +46,16 @@ html {
   border-bottom: 1px solid rgba(150, 150, 150, 0.3);
 }
 
+.projects-section,
+.further-reading-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 // LANDING PAGE SECTION
 .landing-page-section {
+  min-height: calc(100vh - 4rem);
+
   .central-photo {
     flex-grow: 0;
     flex-shrink: 0;
@@ -98,46 +112,11 @@ html {
     font-weight: 300;
   }
 
-  .dictionary {
-    width: 100%;
-
-    .tab-bar .tab {
-      border: 0.5px solid rgb(200, 200, 200);
-      font-weight: 500;
-    }
-
-    .tab-bar .tab:focus {
-      box-shadow: none;
-    }
-
-    .tab-bar .tab[aria-expanded=true] {
-      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-    }
-
-    .collapsed-area {
-      .card {
-        border: 0.5px solid rgb(200, 200, 200);
-
-        .card-title {
-          font-weight: 700;
-          font-family: 'Sriracha', cursive;
-        }
-
-        .card-text {
-          font-weight: 200;
-        }
-      }
-    }
-  }
-
-  .tl-dr {
-    text-align: center;
-
-    .link-list {
-      display: flex;
-      justify-content: space-between;
-      list-style-type: none;
-    }
+  .link-list {
+    margin-top: calc(100vh - 4rem - 400px);
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
   }
 }
 
@@ -186,8 +165,7 @@ html {
   .card:hover .project-name {
     color: rgba(0, 0, 0, 0.9);
     transition: color 2s ease, text-shadow 2s ease;
-    text-shadow:
-      0.25px 0.25px 1px rgba(255, 255, 255, 0.9),
+    text-shadow: 0.25px 0.25px 1px rgba(255, 255, 255, 0.9),
       -0.25px 0.25px 1px rgba(255, 255, 255, 0.9),
       0.25px -0.25px 1px rgba(255, 255, 255, 0.9),
       -0.25px -0.25px 1px rgba(255, 255, 255, 0.9);
