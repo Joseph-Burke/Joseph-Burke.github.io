@@ -180,18 +180,18 @@
         background-size: cover;
       }
 
-      .tic-tac-toe .cover {
+      .robbin-hoodz .cover {
         background:
-          linear-gradient(270deg, rgba(0, 0, 0, 0.5), transparent),
-          url(/tic-tac-toe-1.jpeg);
+          linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent),
+          url(/robbin_hoodz_screenshot.png);
         background-size: cover;
         background-position-x: right;
       }
 
-      .snake .cover {
+      .gust .cover {
         background:
-          linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent),
-          url(/snake.jpeg);
+          linear-gradient(270deg, rgba(0, 0, 0, 0.5), transparent),
+          url(/gust_screenshot.png);
         background-size: cover;
         background-position-x: left;
       }

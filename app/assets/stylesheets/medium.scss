@@ -252,13 +252,11 @@
         }
       }
 
-      .cop-26 {
-        .cover {
+      .cop-26 .cover {
           background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent),
             url(/COP26-4.jpeg);
           background-size: cover;
         }
-      }
 
       .train-track .cover {
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
@@ -278,18 +276,16 @@
         background-size: cover;
       }
 
-      .tic-tac-toe .cover {
+      .robbin-hoodz .cover {
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
-          url(/tic-tac-toe-1.jpeg);
+          url(/robbin_hoodz_screenshot.png);
         background-size: cover;
-        background-position-x: right;
       }
 
-      .snake .cover {
+      .gust .cover {
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent),
-          url(/snake.jpeg);
+          url(/gust_screenshot.png);
         background-size: cover;
-        background-position-x: left;
       }
     }
   }
