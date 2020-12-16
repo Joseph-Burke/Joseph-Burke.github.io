@@ -54,7 +54,7 @@ html {
 
 // LANDING PAGE SECTION
 .landing-page-section {
-  min-height: calc(100vh - 4rem);
+  min-height: 100vh;
 
   .central-photo {
     flex-grow: 0;
@@ -113,7 +113,7 @@ html {
   }
 
   .link-list {
-    margin-top: calc(100vh - 4rem - 400px);
+    margin-top: calc(100vh - 420px);
     display: flex;
     justify-content: space-between;
     list-style-type: none;
